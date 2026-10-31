@@ -4,34 +4,26 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>EP2025 - ¿Qué viene después de Rust en el ecosistema de Python?</title>
+  <title>PyConES 2026 - ¿Qué viene después de Rust en el ecosistema de Python?</title>
 
   <link rel="stylesheet" href="reveal.js/dist/reset.css">
   <link rel="stylesheet" href="reveal.js/dist/reveal.css">
+  <!-- Theme: base skeleton first, then one theme file that overrides its variables -->
+  <link rel="stylesheet" href="css/base-theme.css">
   <link rel="stylesheet" href="css/personal-theme.css">
-  <link rel="stylesheet" href="css/qt.css">
-  <link rel="stylesheet" href="css/extras.css">
+  <!-- Deck styles: palette, layout, components, utilities -->
+  <link rel="stylesheet" href="css/slides.css">
 
   <!-- Theme used for syntax highlighted code -->
-  <link rel="stylesheet" href="reveal.js/plugin/highlight/monokai.css">
-  <!-- Printing and PDF exports -->
-  <script>
-  if( window.location.search.match( /print-pdf/gi ) ) {
-    var link = document.createElement( 'link' );
-    link.rel = 'stylesheet';
-    link.type = 'text/css';
-    link.href = 'reveal.js/css/print/pdf.css';
-    document.getElementsByTagName( 'head' )[0].appendChild( link );
-  }
-  </script>
+  <link rel="stylesheet" href="reveal.js/dist/plugin/highlight/monokai.css">
 </head>
-<!-- CONTENT -->
 <body>
   <div class="reveal">
     <div class="slides">
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_cover.svg">
-  <div id="left70">
+<section data-no-header class="full-slide" data-transition="fade-in fade-out" data-background-image="img/background_cover.svg">
+  <div class="columns c70-30 v-center">
+  <div>
     <h3>¿Qué viene después de Rust en el ecosistema de Python?</h3>
     <hr class="yellow-line"/>
   <p class="x80">
@@ -44,6 +36,7 @@
     <img class="clean-img" src="img/linkedin.png">
   </p>
   </div>
+  </div>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
@@ -51,16 +44,20 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <img style="width: 80%;" src="img/tiobe_july2025.png" />
-  <p style="font-size: 80%;"><a href="https://www.tiobe.com/tiobe-index/">tiobe.com/tiobe-index/</a> (julio 2025)</p>
+  <!-- REMOVE -->
+  <h2>TIOBE: Python sigue siendo el <i class="qt-neon">#1</i></h2>
+  <h1 class="python-yellow">19.23%</h1>
+  <p class="x70">octubre 2026 (-5.23 pts vs. octubre 2025)</p>
+  <p class="x60"><a href="https://www.tiobe.com/tiobe-index/">tiobe.com/tiobe-index/</a></p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h1 class="r-fit-text">...pero, ¿<i class="red">por qué</i>?</h1>
+  <!-- REMOVE -->
+  <h1 class="r-fit-text">...pero, ¿<i class="rust-red">por qué</i>?</h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h1 class="r-fit-text">Demos</h1>
+  <h1 class="r-fit-text">Mejor...demos</h1>
   <h1 class="r-fit-text">un <i class="qt-lemon">paso atrás</i></h1>
 </section>
 
@@ -73,77 +70,27 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <!-- REMOVE -->
     <h2 class="r-fit-text">
     easy_install
     </h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <!-- REMOVE -->
     <h2 class="r-fit-text">
     numarray
     </h2>
 </section>
 
-<section data-background-image="img/background_stars.svg" data-auto-animate data-auto-animate="cubic-bezier(0.77, 0, 0.175, 1.0)">
-  <h2>Aprendiendo a programar</h2>
-  <img data-id="logo1_1" data-auto-animate-delay="0.0" style="margin: 10px; width: 200px;"
-  src="img/logo_c.png" />
-  <img data-id="logo1_2" data-auto-animate-delay="0.3" style="margin: 10px; width: 200px;"
-  src="img/logo_bash.png" />
-  <img data-id="logo1_3" data-auto-animate-delay="0.6" style="margin: 10px; width: 200px;"
-  src="img/logo_perl.png" />
-</section>
-
-<section data-background-image="img/background_stars.svg" data-auto-animate data-auto-animate="cubic-bezier(0.77, 0, 0.175, 1.0)">
-  <img data-id="logo4_1" style="width: 60%" src="img/my_very_first.jpg" />
-</section>
-
-<section data-background-image="img/background_stars.svg" data-auto-animate data-auto-animate="cubic-bezier(0.77, 0, 0.175, 1.0)">
-  <h2>Software astronómico</h2>
-  <h3 style="font-size: 80%;">ALMA Common Software (ACS)</h3>
-  <img data-id="logo2_1" data-auto-animate-delay="0.0" style="margin: 10px; width: 150px;"
-  src="img/java_logo.png" />
-  <img data-id="logo2_2" data-auto-animate-delay="0.3" style="margin: 10px; width: 150px;"
-  src="img/cpp_logo.svg" />
-  <img data-id="logo2_3" data-auto-animate-delay="0.6" style="margin: 10px; width: 150px;"
-  src="img/python.svg" />
-</section>
-
-<section data-background-image="img/background_stars.svg" data-auto-animate data-auto-animate="cubic-bezier(0.77, 0, 0.175, 1.0)">
-  <h2>Computación de alto rendimiento</h2>
-  <h3 style="font-size: 80%;">Trading de alta frecuencia y simulaciones astrofísicas</h3>
-  <img data-id="logo3_1" data-auto-animate-delay="0.0" style="margin: 10px; width: 200px;"
-  src="img/fortran_logo.svg" />
-  <img data-id="logo3_2" data-auto-animate-delay="0.3" style="margin: 10px; width: 200px;"
-  src="img/cpp_logo.svg" />
-  <img data-id="logo3_3" data-auto-animate-delay="0.6" style="margin: 10px; width: 200px;"
-  src="img/python.svg" />
-</section>
-
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h2>Arquitecturas y chips</h2>
-  <img class="fragment" data-id="logo_cpu" style="margin: 10px; width: 300px;" src="img/cpu.png" />
-  <img class="fragment" data-id="logo_gpu" style="margin: 10px; width: 300px;" src="img/gpu.png" />
-  <p class="fragment">(CUDA Toolkit 4 -> ahora en 12.9)</p>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h2>Grandes clústeres computacionales</h2>
-  <img class="fragment" data-id="logo_naoc" style="margin: 10px; width: 200px;" src="img/naoc_laohu_cluster.jpg" />
-  <img class="fragment" data-id="logo_llnl" style="margin: 10px; width: 500px;" src="img/elcapitan_cluster.png" />
-  <p style="font-size: 60%;">Clúster NAOC 2009 (pocos Peta FLOPs) vs El Capitan 2025 (2.7 exaFLOPS)</p>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/obama.gif">
-  <h2>Más hilos <i class="red">probablemente no</i> harán tu código más rápido</h2>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <!-- REMOVE -->
   <h2 class="r-fit-text">En este escenario</h2>
-  <h2>Algunos lenguajes eran <i class="qt-neon">mejores</i> que <i class="red">otros</i></h2>
+  <h2>Algunos lenguajes eran <i class="qt-neon">mejores</i> que <i class="rust-red">otros</i></h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <!-- REMOVE -->
   <h1 class="r-fit-text">...pero bueno, probablemente tengas</h1>
   <h1 class="r-fit-text">una <i class="qt-lemon">historia similar</i></h1>
 </section>
@@ -157,29 +104,16 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h2>Qt Bridges</h2>
-  <div id="left">
-    <img src="img/qt_white.png" />
-  </div>
-  <div id="left">
-    <ul>
-      <li>Framework de C++</li>
-      <li>No son bindings 1:1</li>
-      <li><i class="qt-neon">Integrado con Swift, Java, C#, Rust y Python</i></li>
-      <li><a href="https://qt.io/qt-bridges">qt.io/qt-bridges</a></li>
-    </ul>
-  </div>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <h1 class="r-fit-text">Lenguajes de<br>programación</h1>
 </section>
 
 <section data-background-video="programming_languages.mp4"
          data-background-video-loop data-background-video-muted>
+  <!-- REMOVE -->
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <!-- REMOVE -->
   <h3 class="r-fit-text">El lenguaje de programación <i class="qt-lemon">C</i></h3>
   <ul>
   <li class="fragment">Fortran*, BCPL+SMALGOL -> <i class="qt-violet">B</i></li>
@@ -188,6 +122,7 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <!-- REMOVE -->
   <h3 class="fragment" data-fragment-index="1">La inspiración de Python</h3>
   <pre><code>
   HOW TO RETURN words document:
@@ -198,23 +133,17 @@
              INSERT word IN collection
     RETURN collection
   </code></pre>
-  <p style="font-size: 80%;" class="fragment" data-fragment-index="3"><i class="qt-lemon">Lenguaje de programación ABC</i></p>
+  <p class="fragment x80" data-fragment-index="3"><i class="qt-lemon">Lenguaje de programación ABC</i></p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <!-- REMOVE -->
   <h3 class="r-fit-text">¿Qué Python?</h3>
-</section>
-
-<section data-transition="fade-in fade-out">
-  <img style="width: 90%;" src="img/interpreters1.png" />
-</section>
-
-<section data-transition="fade-in fade-out">
-  <img style="width: 90%;" src="img/interpreters2.png" />
 </section>
 
 <section data-auto-animate data-background-image="img/background_stars.svg"
     data-auto-animate="cubic-bezier(0.77, 0, 0.175, 1.0)">
+  <!-- REMOVE -->
   <img data-id="logo1" data-auto-animate-delay="0.0" style="margin: 20px; width: 130px;" src="img/micropython.png" />
   <img data-id="logo7" data-auto-animate-delay="0.3" style="margin: 20px; width: 200px;" src="img/logo_graalpy.svg" />
   <img data-id="logo3" data-auto-animate-delay="0.6" style="margin: 20px; width: 200px;" src="img/jython.png" />
@@ -235,18 +164,22 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-color="rgb(17, 14, 83)">
+  <!-- REMOVE -->
   <img style="width: 90%" src="img/github_pytorch.png"/>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-color="rgb(38, 18, 48)">
+  <!-- REMOVE -->
   <img style="width: 90%" src="img/github_pydantic.png"/>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-color="rgb(320, 237, 29)">
+  <!-- REMOVE -->
   <img style="width: 90%" src="img/github_duckdb.png"/>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-color="rgb(38, 18, 48)">
+  <!-- REMOVE -->
   <img style="width: 90%" src="img/github_uv.png"/>
 </section>
 
@@ -257,10 +190,10 @@
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h3>Extensión de Python con C (1/4)</h3>
+  <h3>Extensión de Python con C</h3>
   <pre style="font-size: 60%;width: 90%;"><code class="c" data-trim data-noescape>
     static PyObject* hello(PyObject* self, PyObject* args) {
-        char *msg = "Hello EuroPython 2025!";
+        char *msg = "Hello PyCon ES 2026!";
         return Py_BuildValue("s", msg);
     }
 
@@ -271,45 +204,16 @@
   </code></pre>
 </section>
 
-<section data-transition="fade-in fade-out">
-  <h3>Extensión de Python con C (2/4)</h3>
-  <pre style="font-size: 70%;width: 80%;"><code class="c" data-trim data-noescape>
-    static struct PyModuleDef module = {
-        PyModuleDef_HEAD_INIT,
-        "ep2025",
-        NULL,
-        -1,
-        functions
-    };
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out">
-  <h3>Extensión de Python con C (3/4)</h3>
-  <pre style="font-size: 70%;width: 80%;"><code class="c" data-trim data-noescape>
-    PyMODINIT_FUNC PyInit_ep2025(void){
-        return PyModule_Create(&module);
-    }
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out">
-  <h3>Extensión de Python con C (4/4)</h3>
-  <pre style="font-size: 70%;width: 80%;"><code class="python" data-trim data-noescape>
-  >>> from ep2025 import hello
-  >>> hello()
-  'Hello EuroPython 2025!'
-  </code></pre>
-</section>
-
 <section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
   <h1>¿Demasiado complicado?</h1>
   <h3>😵‍💫</h3>
 </section>
 
 <section data-transition="slide-in fade-out">
+  <!-- REMOVE -->
   <h3>Python y C</h3>
-  <div id="left">
+  <div class="columns c50-50">
+  <div>
     <pre class="fade-in fragment" data-fragment-index="1" style="font-size: 40%;width: 90%;"><code class="python" data-trim data-noescape>
     <span class="fragment" data-fragment-index="1"># Un comentario</span>
     <span class="fragment" data-fragment-index="2">import my_module</span>
@@ -329,7 +233,7 @@
     <span class="fragment" data-fragment-index="4">    main()</span>
     </code></pre>
   </div>
-  <div id="right">
+  <div>
     <pre class="fade-in fragment" data-fragment-index="2" style="font-size: 40%;width: 90%;"><code class="c" data-trim data-noescape>
     <span class="fragment" data-fragment-index="1">// Un comentario</span>
     <span class="fragment" data-fragment-index="2">#include &lt;my_module.h&gt;</span>
@@ -350,175 +254,26 @@
 
     </code></pre>
   </div>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-    <h2>Python también puede ser <i class="red">difícil</i></h2>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <pre class="fade-in" data-fragment-index="1" style="font-size: 85%;width: 70%;"><code class="python" data-trim data-noescape>
-  *s,='abcde'
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <pre class="fade-in" data-fragment-index="3" style="font-size: 200%;width: 50%;"><code class="python" data-trim data-noescape>
-      n&amp;~-n&lt;1
-      </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <pre class="fade-in" data-fragment-index="3" style="font-size: 80%;width: 80%;"><code class="python" data-trim data-noescape>
-  _='_=%r;print(_%%_)';print(_%_)
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <pre class="fade-in" data-fragment-index="3" style="font-size: 20%;width: 50%;"><code class="python" data-trim data-noescape>
-x,y=[6            ,11]\
-,[  48,67           ];s\
- =[   x for         x   \
- in    vars          (  )]\
-  ;b=    vars(      )[s[  x[
-   0]]]   ;k=      list(  (b.
-      __dict__      .keys  (
-      ) )) ;g=      getattr(b
-            ,k[x[1]*2]);m=g(
-            b,k[y[1]+1]);l=g\
-            (b              ,k
-            [x              [1
-          ]*        3]    ); i=\
-          g(        b,    k[  x[
-            1]        *6]);p   =g\
-            (b        ,k[y[0    ]-
-              x[0]])  ;a=g(g(b,k
-              [x[0]]  )("".join(
-              m(    g(b,k[      x[
-              0]    //2+x[      1]
-              ])    ,(m(          g(
-              b,    k[y[          0]
-              -1    ])  ,g(b,k[x  [1]+
-              y[    1]  +1])([*[  g(b,
-            k[        y[0]-1])  (y)]  *3
-            ],        [0,x[0],  0]))  ))
-          ))  ,"".            join(m(g(b
-          ,k  [x[0            ]//2+x[1]]
-        ),      (m                  (g
-        (b      ,k                  [y
-        [0        ]-                1]
-        ),        g(                b,
-    k[x[1]      +y[1              ]+1]
-    )([*[g      (b,k              [y[0
-  ]-    1])(      y)  ]*4],[x[0]*-  3,-1
-  ,x    [0]*      -2  ,x[0]//2])))  )));
-p(i((1/5**.5)*(((1+5**.5)/2)**(i(a[1])+1)-((1
--5**.5)/2)**(i(a[1])+1)))) if l(a)>1 else p(1)
-      </code></pre>
-      <p style="font-size: 50%;">Ganador más reproducible - <a href="https://pyobfusc.com/#winners">https://pyobfusc.com/#winners</a></p>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h1 class="r-fit-text">Entonces, ¿por qué <i class="red">no</i> usamos C?</h1>
-</section>
-
-<section data-transition="fade-in fade-out">
-  <h3>Manejo de memoria (menos flexible)</h3>
-  <div id="left" class="fragment">
-    <pre style="font-size: 50%;width: 95%;"><code class="python" data-trim data-noescape>
-    l = [1, 2, 3, 4, 5]
-
-    l2 = []
-
-    l2.append(42)
-    l2.append(17)
-    l2.append("Hallo")
-    </code></pre>
-  </div>
-  <div id="right" class="fragment">
-    <pre style="font-size: 50%;width: 95%;"><code class="c" data-trim data-noescape>
-    int a[] = {1, 2, 3, 4, 5};
-
-    int *a2 = malloc(3 * sizeof(int));
-
-    a2[0] = 42;
-    a2[1] = 17
-    a2[2] = "Hallo" // BOOM! 🔥
-    </code></pre>
-    <pre style="font-size: 50%;width: 95%;" class="fragment"><code class="c" data-trim data-noescape>
-    // No olvides liberar
-    // la memoria que reservaste
-    free(a2);
-    </code></pre>
-  </div>
-
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
-  <h2>Faltan las baterías</h2>
-  <div id="left" class="fragment">
-    <pre style="font-size: 45%;width: 98%;"><code class="c" data-trim data-noescape>
-    typedef struct {
-      size_t size;
-      int *data;
-    } int_vector;
-
-    int *create_vector(size_t n) {
-        return malloc(n * sizeof(int));
-    }
-
-    void set_vector(int_vector *v,
-                    size_t n, int x) {
-      if(v) {
-        if(n >= v->size) {
-          resize_vector(v, n);
-        }
-        v->data[n] = x;
-      }
-    }
-    </code></pre>
-  </div>
-  <div id="right" class="fragment">
-    <pre style="font-size: 50%;width: 95%;"><code class="c" data-trim data-noescape>
-    // ¡Yupi, tenemos "más o menos" un vector
-    int_vector *v = create_vector(10);
-    set_vector(v, 0, 123);
-    </code></pre
-    <ul>
-      <li><i class="qt-lemon">Quizás necesitemos reinventar la rueda</i></li>
-    </ul>
-    <p><a href="https://stackoverflow.com/questions/7826163/whats-the-best-c-implementation-of-the-c-vector">fuente</a></p>
   </div>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
-  <h2>Herramientas</h2>
-  <pre style="font-size: 80%;width: 95%;"><code class="bash" data-trim data-noescape>
-  $ gcc main.c -o main
-  </code></pre>
-  <ul class="fragment">
-    <li>Makefile*</li>
-    <li>Ninja</li>
-    <li>CMake</li>
-  </ul>
-</section>
-
-<section data-background-video="makefile.mp4"
-         data-background-video-loop data-background-video-muted>
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <!-- REMOVE -->
+  <h1 class="r-fit-text">Entonces, ¿por qué <i class="rust-red">no</i> usamos C?</h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
   <h1>Entonces, ¿cuáles son nuestras opciones?</h1>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.png">
+<section data-transition="fade-in fade-out">
   <h2>Swift</h2>
-  <div id="left30">
+  <div class="columns c30-70 v-center">
+  <div>
     <img src="img/swift.png" />
   </div>
-  <div id="right70">
-    <ul style="font-size: 80%;">
+  <div>
+    <ul class="x80">
       <li>2014</li>
       <li>Obj-C ('89) -> Swift</li>
       <li>Sintaxis más corta/mejor</li>
@@ -529,15 +284,18 @@ p(i((1/5**.5)*(((1+5**.5)/2)**(i(a[1])+1)-((1
       <li>POO</li>
     </ul>
   </div>
+  </div>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> Optionals explícitos: menos errores con <code>None</code></p>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_symbol.png">
+<section data-transition="fade-in fade-out">
   <h2>Erlang</h2>
-  <div id="left30">
+  <div class="columns c30-70 v-center">
+  <div>
     <img src="img/erlang.svg" />
   </div>
-  <div id="right70">
-    <ul style="font-size: 80%;">
+  <div>
+    <ul class="x80">
       <li>1986</li>
       <li>Funcional y tolerante a fallos</li>
       <li>¿Alguien dijo industria de telecomunicaciones?</li>
@@ -548,15 +306,36 @@ p(i((1/5**.5)*(((1+5**.5)/2)**(i(a[1])+1)-((1
       <li>VM BEAM (Elixir y gleam)</li>
     </ul>
   </div>
+  </div>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> aislamiento de procesos, la base de ideas como los subintérpretes</p>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_symbol.png">
+<section data-transition="fade-in fade-out">
+  <h2>Gleam</h2>
+  <div class="columns c30-70 v-center">
+  <div>
+    <img src="img/logo_gleam.svg" />
+  </div>
+  <div>
+    <ul class="x80">
+      <li class="fragment">Tipado estático, sintaxis simple</li>
+      <li class="fragment">Corre sobre la <i class="qt-lemon">BEAM</i> (Erlang) y también compila a <i class="qt-lemon">JavaScript</i></li>
+      <li class="fragment">Hereda concurrencia y tolerancia a fallos de Erlang</li>
+      <li class="fragment"><i class="rust-red">Sin historia de extensiones para Python... todavía</i></li>
+    </ul>
+  </div>
+  </div>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> tipado estático amigable y manejo explícito de errores (<code>Result</code>)</p>
+</section>
+
+<section data-transition="fade-in fade-out">
   <h2>Julia</h2>
-  <div id="left30">
+  <div class="columns c30-70 v-center">
+  <div>
     <img src="img/julia.svg" />
   </div>
-  <div id="right70">
-    <ul style="font-size: 80%;">
+  <div>
+    <ul class="x80">
       <li>2012</li>
       <li>Velocidad de C, sensación de R/Python/Matlab</li>
       <li>JIT</li>
@@ -565,243 +344,8 @@ p(i((1/5**.5)*(((1+5**.5)/2)**(i(a[1])+1)-((1
       <li>Sin POO (tipos compuestos mediante structs)</li>
     </ul>
   </div>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/flame.gif">
-  <img style="width: 50%;"src="img/cpp_logo.svg"/>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <h3>Modern C++ <i class="qt-lemon">C++11</i> (1/4)</h3>
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
-  // tipo 'auto'
-  auto a = 0.74;
-  auto b = "hello";
-  </code></pre>
-
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
-  // tuplas
-  auto triple = std::make_tuple(1,2,3);
-  std::tie(x, y, z) = triple;
-  </code></pre>
-
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
-  // diccionarios
-  auto d = std::unordered_map&lt;int,std::string&gt;({4, "Mary"},
-                                               {2, "John"});
-  auto value = d[4];
-  </code></pre>
-
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="4"><code class="c++" data-trim data-noescape>
-  // lambdas
-  std::sort(v.begin(), v.end(),
-        [](int x, int y) { return std::abs(x) < std::abs(y)});
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <h3>Modern C++ <i class="qt-lemon">C++13</i> (2/4)</h3>
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
-  // tipo de retorno 'auto'
-  auto add(int x, int y) {
-      return x + y;
-  }
-  </code></pre>
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
-  // plantillas de variables
-  template &lt;typename T&gt;
-  constexpr T pi = T(3.14159265359...);
-  </code></pre>
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
-  // literales binarios
-  auto b = 0b1101;
-  </code></pre>
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="4"><code class="c++" data-trim data-noescape>
-  // separadores de dígitos
-  auto n = 1'000'000;
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <h3>Modern C++ <i class="qt-lemon">C++17</i> (3/4)</h3>
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
-  // desempaquetar al llamar funciones
-  std::pair&lt;int, int&gt; origin() {
-      return std::pair&lt;int, int&gt; {0, 0}
-  }
-
-  auto [x, y] = origin();
-  </code></pre>
-
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
-  // desempaquetar valores de un mapa en un bucle
-  auto items = std::unordered_map&lt;int, std::string&gt;({4, "Mary"},
-                                                    {2, "John"});
-  for (const auto& [key, value]: items) {
-      //...
-  }
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <h3>Modern C++ <i class="qt-lemon">C++20</i> (4/4)</h3>
-  <div id="left">
-  <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
-  // declaración de módulo
-  export module simple;
-
-  export string hello() {
-    return "¡Ayúdame por favor!";
-  }
-  </code></pre>
   </div>
-  <div id="right">
-  <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
-  // uso del módulo
-  import simple;
-
-  int main() {
-    cout << hello();
-  }
-  </code></pre>
-  </div>
-  <pre style="font-size: 50%; width: 95%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
-  // rangos
-  vector<int> ints{0,1,2,3,4,5};
-  auto even = [](int i){ return 0 == i % 2; };
-  auto square = [](int i) { return i * i; };
-
-  for (int i : ints | views::filter(even) | views::transform(square)) {
-      cout << i << ' ';
-  }
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <h1 class="r-fit-text">Lo <i class="qt-neon">bueno</i> y</h1>
-  <h1 class="r-fit-text">lo <i class="red">malo</i></h1>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <h1 class="r-fit-text">Pilar del mundo tecnológico actual...</h1>
-  <h1 class="r-fit-text">...pero <i class="qt-lemon">viejo y enrevesado</i></h1>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <h1 class="r-fit-text">¿Tiene C++</h1>
-  <h1 class="r-fit-text">un <i class="qt-lemon">sucesor</i>?</h1>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.png">
-  <img style="width: 50%" src="img/carbon_logo.png" />
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_carbon.png">
-  <h3>Carbon</h3>
-  <div id="left">
-    <ul style="font-size: 80%;">
-      <li class="fragment"><i class="qt-lemon">En desarrollo</i></li>
-      <li class="fragment">Enfoque de sucesor</li>
-      <li class="fragment">Interoperabilidad (C++ ⇄ Carbon)</li>
-      <li class="fragment">Sistema genérico moderno</li>
-      <li class="fragment"><i class="qt-mandarin">Estrategia de seguridad</i> (plan de migración)</li>
-    </ul>
-  </div>
-  <div id="right">
-    <pre style="font-size: 34%;width: 90%;"><code class="cpp" data-trim data-noescape>
-    package hello api;
-
-    fn Main() -&gt; i32 {
-      var s: auto = "Hello, world!";
-      Print(s);
-      return 0;
-    }
-    </code></pre>
-    <pre style="font-size: 50%;width: 90%;"><code class="bash" data-trim data-noescape>
-    $ ./explorer hello.carbon
-    Hello, world!
-    </code></pre>
-  </div>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_carbon.png">
-  <h3>Carbon - Aspectos destacados</h3>
-  <div id="left">
-  <ul style="font-size: 80%;">
-    <li class="fragment">Sintaxis más simple</li>
-    <li class="fragment">Sucesor de C++ más seguro y moderno</li>
-    <li class="fragment"><i class="qt-lemon">Seguridad</i>: única forma de cambiar radicalmente la biblioteca estándar</li>
-    <li class="fragment"><i class="red">Aún experimental</i></li>
-  </ul>
-  </div>
-  <div class="fragment" id="right">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1ZTJ9omXOQ0?si=AHZxwXWo_OCuR-L0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p style="font-size: 40%;">Carbon Language Successor Strategy: From C++ Interop to Memory Safety - Chandler Carruth - CppNow 23 </p>
-  </div>
-</section>
-
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.png">
-  <h1>New Circle</h1>
-  <div id="left">
-    <ul>
-      <li class="fragment">Nuevo compilador que entiende nuevas características</li>
-      <li class="fragment">Evolución de C++</li>
-      <li class="fragment">Corrigiendo "errores" con nuevas características</li>
-      <li class="fragment">Cambia la sintaxis</li>
-  </div>
-  <div id="right">
-<pre style="font-size: 32%;width: 99%;"><code class="cpp" data-trim data-noescape>
-#feature on choice
-#include <iostream>
-
-choice IntResult {
-  Success(int),
-  Failure(std::string),
-  Cancelled,
-};
-
-template<typename T>
-void func(T obj) {
-  match(obj) {
-   .Success(auto x) => std::cout<< "Success:"<< x<< "\n";
-   .Failure(auto x) => std::cout<< "Failure:"<< x<< "\n";
-   .Cancelled       => std::terminate();
-  };
-}
-
-int main() {
-  IntResult r1 = .Success(12345);
-  IntResult r2 = .Failure("Hello");
-  IntResult r3 = .Cancelled();
-  func(r1);
-  func(r2);
-  func(r3);
-}
-</code></pre>
-  </div>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h3>New Circle - Aspectos destacados</h3>
-  <div id="left">
-  <ul style="font-size: 80%;">
-    <li class="fragment">Menos defectos</li>
-    <li class="fragment">Características amigables</li>
-    <liy class="fragment"><i class="qt-lemon">Más seguro</i></li>
-    <li class="fragment"><i class="qt-neon">Compatible con C++</i></li>
-  </ul>
-  <p style="font-size: 80%;"><a href="https://github.com/seanbaxter/circle/">github.com/seanbaxter/circle</a></p>
-  </div>
-  <div class="fragment" id="right">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/x7fxeNqSK2k?si=W4HkD0aLU5nfqTQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p style="font-size: 40%;"> Sean Baxter @Bloomberg: Circle corrige defectos y hace el lenguaje C++ más seguro y productivo </p>
-  </div>
-</section>
-
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.png">
-  <h2>¡Espera! ¡Pero estábamos hablando de <i class="qt-lemon">alternativas a C</i>!</h2>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> despacho múltiple y un JIT pensado para computación científica</p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
@@ -809,17 +353,18 @@ int main() {
 </section>
 
 
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_zig.png">
+<section data-transition="fade-in fade-out">
   <h3>Zig</h3>
-  <div id="left">
-    <ul style="font-size: 80%;">
+  <div class="columns c50-50">
+  <div>
+    <ul class="x80">
       <li class="fragment">Sin <i class="qt-mandarin">flujo de control</i> ni <i class="qt-mandarin">reserva de memoria</i> ocultos</li>
       <li class="fragment">Sin preprocesador, sin macros</li>
       <li class="fragment"><i class="qt-mandarin">Metaprogramación</i>: ejecución de código en tiempo de compilación y evaluación perezosa (<code><i class="qt-lemon">comptime</i></code>)</li>
       <li class="fragment">¡Tests, tests, tests!</li>
     </ul>
   </div>
-  <div id="right">
+  <div>
     <pre style="font-size: 34%;width: 90%;"><code class="zig" data-trim data-noescape>
     // main.zig
     const std = @import("std");
@@ -835,11 +380,12 @@ int main() {
     Hello, world!
     </code></pre>
   </div>
+  </div>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_zig.png">
-  <h3>Zig - Aspectos destacados (1/5)</h3>
-  <h4>Integración con bibliotecas de C <i class="red">sin</i> FFI/bindings</h4>
+<section data-transition="fade-in fade-out">
+  <h3>Zig - Aspectos destacados (1/3)</h3>
+  <h4>Integración con bibliotecas de C <i class="rust-red">sin</i> FFI/bindings</h4>
   <pre style="font-size: 38%;width: 95%;"><code class="zig" data-trim data-noescape>
 const c = @cImport({
     // See https://github.com/ziglang/zig/issues/515
@@ -852,10 +398,12 @@ pub fn main() void {
   </code></pre>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_zig.png">
-  <h3>Zig - Aspectos destacados (2/5)</h3>
+<section data-transition="fade-in fade-out">
+  <!-- REMOVE -->
+  <h3>Zig - Aspectos destacados (2/3)</h3>
   <h4><i class="qt-lemon">comptime</i> y <i class="qt-lemon">test</i></h4>
-  <div id="left">
+  <div class="columns c50-50">
+  <div>
   <pre style="font-size: 38%;width: 95%;"><code class="zig" data-trim data-noescape>
   fn max(comptime T: type, a: T, b: T) T {
     return if (a &gt; b) a else b;
@@ -878,7 +426,7 @@ pub fn main() void {
   }
   </code></pre>
   </div>
-  <div class="fragment" id="right">
+  <div class="fragment">
   <pre style="font-size: 45%;width: 95%;"><code class="zig" data-trim data-noescape>
   const std = @import("std");
   const expect = std.testing.expect;
@@ -892,37 +440,11 @@ pub fn main() void {
   }
   </code></pre>
   </div>
+  </div>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_zig.png">
-  <h3>Zig - Aspectos destacados (3/5)</h3>
-  <h4>Herramientas</h4>
-  <pre style="font-size: 38%;width: 95%;"><code class="bash" data-trim data-noescape>
-$ zig init-exe
-info: Created build.zig
-info: Created src/main.zig
-info: Next, try `zig build --help` or `zig build run`
-$ tree
-.
-├── build.zig
-└── src
-    └── main.zig
-
-2 directories, 2 files
-  </code></pre>
-  <pre class="fragment" style="font-size: 38%;width: 95%;"><code class="bash" data-trim data-noescape>
-🥑 ~/yourapp2  % tree zig-out
-zig-out
-└── bin
-    └── yourapp2
-$ zig build run
-All your codebase are belong to us.
-Run `zig build test` to run the tests.
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_zig.png">
-  <h3>Zig - Aspectos destacados (4/5)</h3>
+<section data-transition="fade-in fade-out">
+  <h3>Zig - Aspectos destacados (3/3)</h3>
   <h4>Compilación cruzada</h4>
   </code></pre>
   <pre class="fragment" style="font-size: 38%;width: 95%;"><code class="bash" data-trim data-noescape>
@@ -936,21 +458,7 @@ $  zig build-exe src/main.zig -target aarch64-linux-musl
 $  file main
 main: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, with debug_info, not stripped
   </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_zig.png">
-  <h3>Zig - Aspectos destacados (5/5)</h3>
-  <div id="left">
-  <ul style="font-size: 80%;">
-    <li class="fragment">allocators personalizados</li>
-    <li class="fragment">Más rápido y seguro que C (*)</li>
-    <li class="fragment"><i class="red">desarrollo activo</i></li>
-  </ul>
-  </div>
-  <div class="fragment" id="right">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/YXrb-DqsBNU?si=iV59s_a-Xw5Tgp8H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <p style="font-size: 40%;"> Intro to the Zig Programming Language • Andrew Kelley • GOTO 2022 </p>
-  </div>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> compilación cruzada sencilla, ideal para construir wheels de varias plataformas</p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
@@ -980,28 +488,29 @@ main: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linke
   <img style="width: 50%;"src="img/rust_logo.svg"/>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/qtws_back_rust.png">
+<section data-transition="fade-in fade-out">
   <h3>Rust</h3>
-  <div id="left">
+  <div class="columns c50-50">
+  <div>
     <ul style="font-size: 90%;">
       <li class="fragment"><i class="qt-lemon">Rendimiento</i>
-        <ul style="font-size: 70%;">
+        <ul class="x70">
           <li>Rápido y eficiente en memoria (sin runtime ni GC).</li>
         </ul>
       </li>
       <li class="fragment"><i class="qt-lemon">Fiabilidad</i>
-        <ul style="font-size: 70%;">
+        <ul class="x70">
           <li>Sistema de tipos rico y modelo de ownership (seguridad de memoria e hilos)</li>
         </ul>
       </li>
       <li class="fragment"><i class="qt-lemon">Productividad</i>
-        <ul style="font-size: 70%;">
+        <ul class="x70">
           <li>Documentación, compilador amigable, gestor de paquetes y herramienta de build.</li>
         </ul>
       </li>
     </ul>
   </div>
-  <div id="right">
+  <div>
     <pre style="font-size: 50%;width: 80%;"><code class="rust" data-trim data-noescape>
     fn main() {
       println!("Hello, world!");
@@ -1012,6 +521,7 @@ main: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linke
     $ ./main
     Hello, world!
     </code></pre>
+  </div>
   </div>
 </section>
 
@@ -1033,15 +543,132 @@ fn hello(s: &str) -> PyResult<String> {
 
 /// Un módulo de Python implementado en Rust.
 #[pymodule]
-fn ep2025(_py: Python, m: &PyModule) -> PyResult<()> {
+fn pycones2026(_py: Python, m: &PyModule) -> PyResult<()> {
     m.add_function(wrap_pyfunction!(hello, m)?)?;
     Ok(())
 }
         </code></pre>
       </section>
 
+<section data-transition="fade-in fade-out">
+  <h3>Seguridad de memoria/hilos en Rust</h3>
+  <div class="columns c50-50">
+  <div>
+  <pre style="font-size: 40%; width: 90%;"><code class="c" data-trim data-noescape>
+#include &lt;stdio.h&gt;
+#include &lt;stdint.h&gt;
+
+int main(int argc, char *argv[]) {
+ uint32_t array[5] = {0, 0, 0, 0, 0};
+ for (int idx = 0; idx < 7; idx++) {
+   printf("%d: %d\n", idx, array[idx]);
+ }
+ return 0;
+}
+  </code></pre>
+  <pre style="font-size: 45%; width: 90%;"><code class="bash" data-trim data-noescape>
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+5: 0
+6: -812787712
+  </code></pre>
+  </div>
+  <div class="fragment">
+  <pre style="font-size: 39%; width: 90%;"><code class="rust" data-trim data-noescape>
+fn main() {
+  let array: [u32; 5] = [0;5];
+  for index in 0..array.len() + 2 {
+    println!("{}: {}", index, array[index])
+  }
+}
+  </code></pre>
+  <pre style="font-size: 35%; width: 90%;"><code class="bash" data-trim data-noescape>
+0: 0
+1: 0
+2: 0
+3: 0
+4: 0
+
+thread 'main' panicked at overflow.rs:4:35:
+index out of bounds: the len is 5 but the index
+  is 5
+note: run with `RUST_BACKTRACE=1` environment
+  variable to display a backtrace
+  </code></pre>
+  </div>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
+  <!-- REMOVE -->
+  <h3>Herramientas de Rust</h3>
+  <div class="columns c30-70 v-center">
+  <div>
+  <img style="width: 80%;" src="img/Cargo-Logo-Small.png"/>
+  </div>
+  <div>
+  <pre style="font-size: 33%; width: 100%;"><code class="bash" data-trim data-noescape>
+➜  project cargo init
+   Creating binary (application) package
+note: see more `Cargo.toml` keys and their definitions at
+    https://doc.rust-lang.org/cargo/reference/manifest.html
+➜  project tree
+.
+├── Cargo.toml
+└── src
+    └── main.rs
+
+2 directories, 2 files
+➜  project cargo build
+   Compiling project v0.1.0 (/tmp/project)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.21s
+➜  project cargo run
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.00s
+     Running `target/debug/project`
+Hello, world!
+  </code></pre>
+  </div>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
+  <h2>Rust en el ecosistema de Python</h2>
+  <div class="columns c50-50">
+  <div>
+    <h4>Herramientas escritas en Rust</h4>
+    <ul style="font-size: 75%;">
+      <li class="fragment"><i class="qt-lemon">uv</i> y <i class="qt-lemon">ruff</i></li>
+      <li class="fragment"><i class="qt-lemon">pydantic-core</i></li>
+      <li class="fragment"><i class="qt-lemon">polars</i></li>
+      <li class="fragment"><i class="qt-lemon">cryptography</i></li>
+    </ul>
+  </div>
+  <div>
+    <h4>Por qué funcionó</h4>
+    <ul style="font-size: 75%;">
+      <li class="fragment"><i class="qt-neon">PyO3 + maturin</i>: de cero a wheel en minutos</li>
+      <li class="fragment"><i class="qt-neon">cargo</i>: dependencias y builds reproducibles</li>
+      <li class="fragment"><i class="qt-neon">Seguridad de memoria</i> sin recolector de basura</li>
+    </ul>
+  </div>
+  </div>
+</section>
+
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
   <h1>Herramientas, sistemas centrales, toolchain, kernel</h1>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_scary.png" data-background-opacity="0.3">
+  <h3>Y los gobiernos <i class="qt-lemon">lo notaron</i></h3>
+  <dl class="timeline">
+    <dt>2022&ndash;24</dt><dd><b>NSA, CISA, Casa Blanca</b>: hojas de ruta hacia lenguajes con memoria segura,
+                        con Rust entre las alternativas</dd>
+    <dt class="now">2026&ndash;27</dt><dd><b>Ley de Ciberresiliencia de la UE (CRA)</b>: recae sobre las empresas
+                        que distribuyen Python, C++ <i>y</i> Rust</dd>
+  </dl>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
@@ -1052,41 +679,13 @@ fn ep2025(_py: Python, m: &PyModule) -> PyResult<()> {
   <h3>pero...</h3>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/12.png">
+<section data-transition="fade-in fade-out">
   <h1 class="r-fit-text">Aplicación real</h1>
-  <h3><i class="red">rustglob</i></h3>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <pre style="font-size: 45%; width: 100%;"><code class="rust" data-trim data-noescape>
-use pyo3::{prelude::*, types::PyList};
-use std::fs;
-use walkdir::WalkDir;
-
-#[pyfunction]
-fn glob(py: Python<'_>, path: String, recursive: Option<bool>) -> PyResult<&PyList> {
-    let list: &PyList = PyList::empty(py);
-    if recursive.unwrap_or(false) == false {
-        for path in fs::read_dir(path).unwrap() {
-            let _ = list.append(path.unwrap().path().display().to_string());
-        }
-    } else {
-        for path in WalkDir::new(path) {
-            let _ = list.append(path.unwrap().path().display().to_string());
-        }
-    };
-    Ok(list)
-}
-
-#[pymodule]
-fn rust_glob(_py: Python, m: &PyModule) -> PyResult<()> {
-    m.add_function(wrap_pyfunction!(glob, m)?)?;
-    Ok(())
-}
-  </code></pre>
+  <h3><i class="rust-red">rustglob</i></h3>
 </section>
 
 <section data-transition="fade-in fade-out">
+  <!-- REMOVE -->
   <h3>Configuración y benchmark</h3>
   <p><i class="qt-neon">1K directorios, 1M archivos</i></p>
   <table style="font-size: 85%;">
@@ -1109,7 +708,7 @@ fn rust_glob(_py: Python, m: &PyModule) -> PyResult<()> {
     <td><i class="qt-lemon">48.7%</i></td>
   </tr>
   <tr class="fragment">
-    <td><code><i class="red">Rust glob (PyO3)</i></code></td>
+    <td><code><i class="rust-red">Rust glob (PyO3)</i></code></td>
     <td>0.00088</td>
     <td><i class="qt-lemon">0.88313</i></td>
     <td><i class="qt-lemon">84.7%</i>🎉</td>
@@ -1124,35 +723,13 @@ fn rust_glob(_py: Python, m: &PyModule) -> PyResult<()> {
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
+  <!-- REMOVE -->
   <h1 class="r-fit-text">Pfff...seguro que</h1>
   <h1 class="r-fit-text">optimizaste la impl. de C++</h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <pre style="font-size: 45%; width: 100%;"><code class="cpp" data-trim data-noescape>
-static PyObject* fastglob_glob(PyObject* self, PyObject* args, PyObject* kwds){
-    // Parseando los argumentos
-    ...
-
-    // Creando una lista vacía
-    PyObject *l = PyList_New(0);
-
-    // Llenando la lista según si es recursivo o no
-    if (recursive) {
-        for (const auto &entry : fs::recursive_directory_iterator(directory))
-            PyList_Append(l, PyUnicode_FromString(entry.path().c_str()));
-    } else {
-        for (const auto &entry : fs::directory_iterator(directory))
-            PyList_Append(l, PyUnicode_FromString(entry.path().c_str()));
-    }
-
-    return l;
-}
-
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
+  <!-- REMOVE -->
   <h1 class="r-fit-text">¡Eso es injusto!</h1>
   <h1 class="r-fit-text">es el overhead de PyO3</h1>
 </section>
@@ -1180,7 +757,7 @@ static PyObject* fastglob_glob(PyObject* self, PyObject* args, PyObject* kwds){
     <td><i class="qt-lemon">48.7%</i></td>
   </tr>
   <tr>
-    <td><code><i class="red">Rust glob (PyO3)</i></code></td>
+    <td><code><i class="rust-red">Rust glob (PyO3)</i></code></td>
     <td>0.00088</td>
     <td><i class="qt-lemon">0.88313</i></td>
     <td><i class="qt-lemon">84.5%</i></td>
@@ -1202,132 +779,263 @@ static PyObject* fastglob_glob(PyObject* self, PyObject* args, PyObject* kwds){
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
   <h2>Si C++ es más rápido, <br>¿por qué no lo usamos? 🤔</h2>
-  <p style="font-size: 80%;"><i class="qt-lemon">(Volveremos a esto más adelante)</i></p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/flame.gif">
+  <!-- REMOVE -->
+  <img style="width: 50%;"src="img/cpp_logo.svg"/>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+  <!-- REMOVE -->
+  <h3>Modern C++ <i class="qt-lemon">C++11</i> (1/2)</h3>
+  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
+  // tipo 'auto'
+  auto a = 0.74;
+  auto b = "hello";
+  </code></pre>
+
+  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
+  // tuplas
+  auto triple = std::make_tuple(1,2,3);
+  std::tie(x, y, z) = triple;
+  </code></pre>
+
+  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
+  // diccionarios
+  auto d = std::unordered_map&lt;int,std::string&gt;({4, "Mary"},
+                                               {2, "John"});
+  auto value = d[4];
+  </code></pre>
+
+  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="4"><code class="c++" data-trim data-noescape>
+  // lambdas
+  std::sort(v.begin(), v.end(),
+        [](int x, int y) { return std::abs(x) < std::abs(y)});
+  </code></pre>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+  <h3>Modern C++ <i class="qt-lemon">C++20</i> (2/2)</h3>
+  <div class="columns c50-50">
+  <div>
+  <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
+  // declaración de módulo
+  export module simple;
+
+  export string hello() {
+    return "¡Ayúdame por favor!";
+  }
+  </code></pre>
+  </div>
+  <div>
+  <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
+  // uso del módulo
+  import simple;
+
+  int main() {
+    cout << hello();
+  }
+  </code></pre>
+  </div>
+  </div>
+  <pre style="font-size: 50%; width: 95%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
+  // rangos
+  vector<int> ints{0,1,2,3,4,5};
+  auto even = [](int i){ return 0 == i % 2; };
+  auto square = [](int i) { return i * i; };
+
+  for (int i : ints | views::filter(even) | views::transform(square)) {
+      cout << i << ' ';
+  }
+  </code></pre>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> módulos y rangos: modernizar un lenguaje sin romper el código existente</p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+  <h1 class="r-fit-text">¿Tiene C++</h1>
+  <h1 class="r-fit-text">un <i class="qt-lemon">sucesor</i>?</h1>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h3>Seguridad de memoria/hilos en Rust</h3>
-  <div id="left">
-  <pre style="font-size: 40%; width: 90%;"><code class="c" data-trim data-noescape>
-#include &lt;stdio.h&gt;
-#include &lt;stdint.h&gt;
+  <!-- REMOVE -->
+  <img style="width: 50%" src="img/carbon_logo.png" />
+</section>
 
-int main(int argc, char *argv[]) {
- uint32_t array[5] = {0, 0, 0, 0, 0};
- for (int idx = 0; idx < 7; idx++) {
-   printf("%d: %d\n", idx, array[idx]);
- }
- return 0;
-}
-  </code></pre>
-  <pre style="font-size: 45%; width: 90%;"><code class="bash" data-trim data-noescape>
-0: 0
-1: 0
-2: 0
-3: 0
-4: 0
-5: 0
-6: -812787712
-  </code></pre>
+<section data-transition="fade-in fade-out">
+  <!-- REMOVE -->
+  <h3>Carbon</h3>
+  <div class="columns c50-50">
+  <div>
+    <ul class="x80">
+      <li class="fragment"><i class="qt-lemon">En desarrollo</i></li>
+      <li class="fragment">Enfoque de sucesor</li>
+      <li class="fragment">Interoperabilidad (C++ ⇄ Carbon)</li>
+      <li class="fragment">Sistema genérico moderno</li>
+      <li class="fragment"><i class="qt-mandarin">Estrategia de seguridad</i> (plan de migración)</li>
+    </ul>
   </div>
-  <div id="right" class="fragment">
-  <pre style="font-size: 39%; width: 90%;"><code class="rust" data-trim data-noescape>
-fn main() {
-  let array: [u32; 5] = [0;5];
-  for index in 0..array.len() + 2 {
-    println!("{}: {}", index, array[index])
+  <div>
+    <pre style="font-size: 34%;width: 90%;"><code class="cpp" data-trim data-noescape>
+    package hello api;
+
+    fn Main() -&gt; i32 {
+      var s: auto = "Hello, world!";
+      Print(s);
+      return 0;
+    }
+    </code></pre>
+    <pre style="font-size: 50%;width: 90%;"><code class="bash" data-trim data-noescape>
+    $ ./explorer hello.carbon
+    Hello, world!
+    </code></pre>
+  </div>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h3>Carbon - Aspectos destacados</h3>
+  <div class="columns c50-50">
+  <div>
+  <ul class="x80">
+    <li class="fragment">Google, 2022: un <i class="qt-lemon">sucesor</i>, no un dialecto</li>
+    <li class="fragment">La interoperabilidad con C++ es todo el punto</li>
+    <li class="fragment">Chequeos de memoria y data races en compilación, <i class="qt-lemon">sin</i> <code>&amp;mut</code> exclusivo</li>
+    <li class="fragment">Plan: modo <i class="qt-mandarin">permisivo</i> &rarr; modo <i class="qt-mandarin">estricto</i></li>
+    <li class="fragment"><i class="rust-red">Aún experimental</i></li>
+  </ul>
+  </div>
+  <div class="fragment">
+    <a href="https://www.youtube.com/watch?v=1ZTJ9omXOQ0" target="_blank"><img style="width: 560px;" src="img/yt_1ZTJ9omXOQ0.jpg" /></a>
+    <p class="x40">Carbon Language Successor Strategy: From C++ Interop to Memory Safety - Chandler Carruth - CppNow 23 </p>
+  </div>
+  </div>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> migración gradual con interoperabilidad, justo lo que busca Rust en CPython</p>
+</section>
+
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+  <!-- REMOVE -->
+  <h3>C++ lleva <i class="qt-lemon">mucho</i> tiempo<br>trabajando en seguridad</h3>
+  <hr class="yellow-line"/>
+  <dl class="timeline">
+    <dt>1998&ndash;2008</dt><dd>RAII, <code>auto_ptr</code>; reglas JSF++ (2005) y MISRA C++ (2008)</dd>
+    <dt>2011&ndash;14</dt><dd>"C++ moderno": smart pointers, move semantics</dd>
+    <dt>2012</dt><dd>Sanitizers: AddressSanitizer en Clang y GCC</dd>
+    <dt>2015</dt><dd>Core Guidelines, GSL, <b>Lifetime Profile</b> (nunca se entregó)</dd>
+    <dt>2024&ndash;26</dt><dd>libc++ reforzada, biblioteca estándar reforzada en C++26</dd>
+  </dl>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+  <h3>La respuesta de C++, 1/2: <i class="qt-lemon">Profiles</i></h3>
+  <div class="columns c60-40 v-start">
+  <div>
+    <pre style="font-size: 46%;"><code class="cpp" data-trim data-noescape>
+// sintaxis propuesta (P3081 / P3589), aún cambiando
+[[profiles::enforce(bounds_safety)]];
+[[profiles::enforce(type_safety)]];
+
+void fill(std::span&lt;int&gt; s, int* raw) {
+    s[10] = 0;   // verificado en runtime
+    raw[1] = 0;  // rechazado: índice sobre puntero crudo
+
+    [[profiles::suppress(bounds_safety)]]
+    raw[1] = 0;  // excepción explícita y fácil de buscar
+}
+    </code></pre>
+    <p class="x60">El mismo C++, con reglas más estrictas</p>
+  </div>
+  <div>
+    <ul class="x70">
+      <li class="fragment">Stroustrup y Sutter</li>
+      <li class="fragment">Subconjuntos opt-in: límites, tipos, lifetimes</li>
+      <li class="fragment">Sin sintaxis ni biblioteca estándar nuevas</li>
+      <li class="fragment">Es la dirección del comité, pero <i class="rust-red">no entra en C++26</i></li>
+      <li class="fragment">C++26 trae en cambio una biblioteca estándar reforzada</li>
+    </ul>
+  </div>
+  </div>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> reglas más estrictas que se activan poco a poco, como los type hints</p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+  <h3>La respuesta de C++, 2/2: <i class="qt-lemon">Safe C++</i> / Circle</h3>
+  <div class="columns c60-40 v-start">
+  <div>
+    <pre style="font-size: 46%;"><code class="cpp" data-trim data-noescape>
+#feature on safety
+#include &lt;std2.h&gt;
+
+int main() safe {
+  std2::vector&lt;int&gt; vec { 11, 15, 20 };
+
+  for(int x : vec) {
+    // error: modificar vec invalida
+    // el iterador del for
+    if(x % 2)
+      mut vec.push_back(x);
   }
 }
-  </code></pre>
-  <pre style="font-size: 35%; width: 90%;"><code class="bash" data-trim data-noescape>
-0: 0
-1: 0
-2: 0
-3: 0
-4: 0
-
-thread 'main' panicked at overflow.rs:4:35:
-index out of bounds: the len is 5 but the index
-  is 5
-note: run with `RUST_BACKTRACE=1` environment
-  variable to display a backtrace
-  </code></pre>
+    </code></pre>
+    <p class="x60">Un borrow checker, en C++</p>
   </div>
+  <div>
+    <ul class="x70">
+      <li class="fragment">Sean Baxter (P3390, 2024)</li>
+      <li class="fragment">Borrow checker real y funciones <code>safe</code></li>
+      <li class="fragment">Una segunda biblioteca estándar (<code>std2</code>)</li>
+      <li class="fragment"><i class="rust-red">Abandonado</i> en junio de 2025: ganó Profiles</li>
+    </ul>
+  </div>
+  </div>
+  <p class="x60 fragment">Lo más cercano al modelo de Rust... demasiado lejos de C++ 🫤</p>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> una migración que exige reescribirlo todo rara vez gana</p>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <h3>Herramientas de Rust</h3>
-  <div id="left30">
-  <img style="width: 80%;" src="img/Cargo-Logo-Small.png"/>
-  </div>
-  <div id="right70">
-  <pre style="font-size: 33%; width: 100%;"><code class="bash" data-trim data-noescape>
-➜  project cargo init
-   Creating binary (application) package
-note: see more `Cargo.toml` keys and their definitions at
-    https://doc.rust-lang.org/cargo/reference/manifest.html
-➜  project tree
-.
-├── Cargo.toml
-└── src
-    └── main.rs
-
-2 directories, 2 files
-➜  project cargo build
-   Compiling project v0.1.0 (/tmp/project)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.21s
-➜  project cargo run
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.00s
-     Running `target/debug/project`
-Hello, world!
-  </code></pre>
-  </div>
-</section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <h1 class="r-fit-text">Si es tan bueno</h1>
+  <h1 class="r-fit-text">Volviendo a Rust: si es tan bueno</h1>
   <h1 class="r-fit-text">¿por qué no una <i class="qt-neon">reescritura completa</i>?</h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <h2>rustpython (1/2)
-  </h2>
-  <div id="left">
-    <ul style="font-size: 90%;">
-      <li>Reescritura completa</li>
-      <li class="fragment">Inspirado en Jython/IronPython</li>
-      <li class="fragment">Puede embeberse en programas de Rust</li>
-      <li class="fragment">Compila a WebAssembly</li>
-      <li class="fragment">...¡pip funciona!</li>
-    </ul>
-  </div>
-  <div id="right">
-    <pre style="font-size: 60%;width: 90%;"><code class="c" data-trim data-noescape>
-    # JIT experimental
-    def foo():
-      a = 5
-      return 10 + a
-
-    foo.__jit__()
-    assert foo() == 15
-    </code></pre>
-  i</div>
+  <h2>Rust para CPython (1/2)</h2>
+  <p class="x70">Propuesta de David Hewitt, Emma Smith y Kirill Podoprigora (Language Summit 2026)</p>
+  <ul class="x80">
+    <li class="fragment"><i class="python-yellow">3.16</i> (oct 2027) - backend opcional en Rust para <i class="qt-lemon">zlib</i>, con C como alternativa</li>
+    <li class="fragment"><i class="python-yellow">3.17</i> (oct 2028) - más áreas: io, json, xml, memoryview, parser</li>
+    <li class="fragment"><i class="python-yellow">2029+</i> - Rust obligatorio para compilar CPython</li>
+  </ul>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <h2>rustpython (2/2)</h2>
-  <img style="width: 70%;" src="img/rustpython_tests.png" />
-  <p style="font-size: 60%;"><a href="https://rustpython.github.io/pages/regression-tests-results.html">rustpython.github.io/pages/regression-tests-results.html</a></p>
+  <h2>Rust para CPython (2/2)</h2>
+  <div class="columns c50-50">
+  <div>
+    <h4>Criterios de éxito</h4>
+    <ul class="x70">
+      <li class="fragment">La mayoría de core devs abiertos a usar la API de Rust</li>
+      <li class="fragment">Sin lentitud en los benchmarks de CPython</li>
+      <li class="fragment">Rust soporta todas las plataformas con tier</li>
+    </ul>
+  </div>
+  <div>
+    <h4>Preocupaciones</h4>
+    <ul class="x70">
+      <li class="fragment">Portabilidad entre plataformas</li>
+      <li class="fragment">No todos conocen Rust</li>
+      <li class="fragment">Dependencias de Cargo (zlib-rs)</li>
+      <li class="fragment">Rust no elimina todos los bugs</li>
+    </ul>
+  </div>
+  </div>
+  <p class="x50"><a href="https://blog.python.org/2026/09/language-summit-2026-rust-for-cpython/">blog.python.org - Rust for CPython (Language Summit 2026)</a></p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
   <h1 class="r-fit-text">Si vamos a reescribir...</h1>
   <h1 class="r-fit-text">¿por qué no <i class="qt-neon">repensar</i> todo?</h1>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
-  <h3>LLVM</h3>
-  <img style="width: 80%;" src="img/llvm_logo.png"/>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
@@ -1337,15 +1045,16 @@ Hello, world!
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
   <h2>mojo 🔥 (2/2)</h2>
-  <div id="left">
-    <ul style="font-size: 80%;" >
+  <div class="columns c50-50">
+  <div>
+    <ul  class="x80">
       <li>Lenguaje específico de dominio embebido (eDSL)</li>
       <li>Lenguaje de sistemas para programación de GPU</li>
       <li>Tipos dependientes</li>
       <li>MLIR: Representación Intermedia Multinivel</li>
     </ul>
   </div>
-  <div id="right">
+  <div>
     <pre style="font-size: 40%;width: 99%;"><code class="python" data-trim data-noescape>
 from python import Python
 
@@ -1363,86 +1072,31 @@ def main():
    _t.test_interop_func()
  </code></pre>
   </div>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
-  <h2>Otras opciones: <i class="qt-lemon">codon</i></h2>
-  <img style="width: 80%;" src="img/codon-pipeline.svg" />
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
-  <h2>Otras opciones: <i class="qt-lemon">triton</i></h2>
-  <div id="left">
-<pre style="font-size: 40%;width: 90%;"><code class="python" data-trim data-noescape>
-BLOCK = 512
-
-# Este es un kernel de GPU en Numba.
-# Distintas instancias de esta
-# función pueden ejecutarse en paralelo.
-@jit
-def add(X, Y, Z, N):
-   # En Numba/CUDA, cada instancia del
-   # kernel usa un modelo de ejecución SIMT,
-   # donde las instrucciones se ejecutan en
-   # paralelo para distintos valores de threadIdx
-   tid = threadIdx.x
-   bid = blockIdx.x
-   # índice escalar
-   idx = bid * BLOCK + tid
-   if id < N:
-     # En Numba no hay punteros.
-     # Z,X,Y son tensores densos
-     Z[idx] = X[idx] + Y[idx]
-</code></pre>
-<pre style="font-size: 40%;width: 90%;"><code class="python" data-trim data-noescape>
-...
-grid = (ceil_div(N, BLOCK),)
-block = (BLOCK,)
-add[grid, block](x, y, z, x.shape[0])
-</code></pre>
   </div>
-  <div id="right">
-<pre class="fragment" style="font-size: 40%;width: 90%;"><code class="python" data-trim data-noescape>
-BLOCK = 512
-
-# Este es un kernel de GPU en Triton.
-# Distintas instancias de esta
-# función pueden ejecutarse en paralelo.
-@jit
-def add(X, Y, Z, N):
-   # En Triton, cada instancia del kernel
-   # ejecuta operaciones de bloque en un
-   # único hilo: no existe una construcción
-   # análoga a threadIdx
-   pid = program_id(0)
-   # bloque de índices
-   idx = pid * BLOCK + arange(BLOCK)
-   mask = idx < N
-   # Triton usa aritmética de punteros
-   # en lugar de operadores de indexado
-   x = load(X + idx, mask=mask)
-   y = load(Y + idx, mask=mask)
-   store(Z + idx, x + y, mask=mask)
-</code></pre>
-<pre style="font-size: 40%;width: 90%;"><code class="python" data-trim data-noescape>
-...
-grid = (ceil_div(N, BLOCK),)
-# sin thread-block
-add[grid](x, y, z, x.shape[0])
-</code></pre>
-  </div>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> la sintaxis de Python para programar GPUs y aceleradores</p>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.png">
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h2>Una extensión, muchos lenguajes</h2>
+  <table class="x70">
+  <tr><td><i class="qt-lemon">C</i></td><td>API de C de CPython</td></tr>
+  <tr><td><i class="qt-lemon">C++</i></td><td>nanobind (ABI estable desde Python 3.12)</td></tr>
+  <tr><td><i class="qt-lemon">Rust</i></td><td>PyO3</td></tr>
+  <tr><td><i class="qt-lemon">Zig</i></td><td>Ziggy Pydust, py.zig</td></tr>
+  <tr><td><i class="qt-lemon">Mojo</i></td><td>Importa módulos de Python, y Python llama a Mojo</td></tr>
+  </table>
+</section>
+
+<section data-transition="fade-in fade-out">
   <h1>¿Pero esto sigue siendo <i class="qt-lemon">Python</i>?</h1>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.png">
+<section data-transition="fade-in fade-out">
   <h3><i class="qt-lemon">¿Cuál es nuestro objetivo?</i></h3>
   <h2>¿Hacer Python más rápido?<br>¿o movernos a un nuevo lenguaje?</h2>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.png">
+<section data-transition="fade-in fade-out">
   <h1>Próximas características de Python</h1>
 </section>
 
@@ -1453,10 +1107,33 @@ add[grid](x, y, z, x.shape[0])
       <li class="fragment"><i class="python-yellow">3.12</i> - Generador de intérprete con análisis y modificación del DSL</li>
       <li class="fragment"><i class="python-yellow">3.13</i> - Más optimización del intérprete de micro-ops (ejecución de código "caliente").</li>
       <li class="fragment"><i class="python-yellow">3.14</i> - Intérprete con tail calls y el nuevo JIT.</li>
+      <li class="fragment"><i class="rust-red">PEP 836</i> - Hoja de ruta para un JIT soportado: retirado (oct 2026)</li>
     </ul>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h2>Concurrencia en Python</h2>
+  <ul class="x80">
+    <li class="fragment"><i class="python-yellow">PEP 703</i> - build <i class="qt-lemon">free-threaded</i> (opcional)</li>
+    <li class="fragment"><i class="python-yellow">PEP 779</i> - soportado oficialmente desde <i class="python-yellow">3.14</i></li>
+    <li class="fragment">El GIL sigue siendo el predeterminado; sin versión comprometida para cambiarlo</li>
+    <li class="fragment"><i class="python-yellow">PEP 734</i> - múltiples intérpretes (<code>concurrent.interpreters</code>) desde <i class="python-yellow">3.14</i></li>
+    <li class="fragment"><i class="rust-red">Las extensiones en C necesitan recompilarse</i></li>
+  </ul>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h2>Cómo cambia Python hoy</h2>
+  <h3 class="x80">Criterios de éxito antes de aceptar un cambio grande</h3>
+  <ul class="x80">
+    <li class="fragment">Free-threading (PEP 779)</li>
+    <li class="fragment">JIT (PEP 836, retirado)</li>
+    <li class="fragment">Rust en CPython (PEP en preparación)</li>
+  </ul>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <!-- REMOVE -->
     <h2>Antes de la VM</h2>
     <div class="r-hstack justify-center" style="font-size: 70%;">
         <div>Bytecode</div>
@@ -1467,7 +1144,7 @@ add[grid](x, y, z, x.shape[0])
         <div class="fragment" data-fragment-index="4">➡️</div>
         <div class="fragment" data-fragment-index="4" style="margin: 40px;">Trazas de<br>Micro-Op<br>optimizadas</div>
     </div>
-    <p style="font-size: 50%;">
+    <p class="x50">
     Brandt Bucher: <a href="https://www.youtube.com/watch?v=kMO3Ju0QCDo">Construyendo un compilador JIT para CPython</a> (PyCon US 2024)
     </p>
 </section>
@@ -1501,7 +1178,7 @@ add[grid](x, y, z, x.shape[0])
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h1 class="r-fit-text">Python <i class="red">no</i> es perfecto</h1>
+  <h1 class="r-fit-text">Python <i class="rust-red">no</i> es perfecto</h1>
   <h1 class="r-fit-text">¡y está <i class="qt-neon">bien</i>! 🎉</h1>
 </section>
 
@@ -1512,10 +1189,32 @@ add[grid](x, y, z, x.shape[0])
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <h1>..más podremos<br>darle forma al <i class="qt-lemon">futuro</i> de Python.</h1>
 </section>
-    </i>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_backcover.svg">
-  <div id="left">
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h1>No solo Python está <i class="qt-lemon">aprendiendo</i> de otros lenguajes</h1>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h2>Qt Bridges</h2>
+  <div class="columns c40-60 v-center">
+  <div>
+    <img src="img/qt_white.png" />
+  </div>
+  <div>
+    <ul>
+      <li>Framework de C++</li>
+      <li>No son bindings 1:1</li>
+      <li><i class="qt-neon">Integrado con Swift, Java, C#, Rust y Python</i></li>
+      <li><i class="qt-lemon">Más lenguajes para el futuro de Qt</i></li>
+      <li><a href="https://qt.io/qt-bridges">qt.io/qt-bridges</a></li>
+    </ul>
+  </div>
+  </div>
+</section>
+
+<section data-no-header class="full-slide" data-transition="fade-in fade-out" data-background-image="img/background_backcover.svg">
+  <div class="columns c60-40 v-center">
+  <div>
     <h4>¿Qué viene después de Rust en el ecosistema de Python?</h4>
     <p class="x80">
     Dr. <i class="qt-lemon">Cristián</i> Maureira-Fredes<br>
@@ -1526,11 +1225,28 @@ add[grid](x, y, z, x.shape[0])
     <img class="clean-img" src="img/github_white.png">
     <img class="clean-img" src="img/linkedin.png">
     <hr class="yellow-line"/>
-    <a href="https://maureira.dev/ep2025">github.com/cmaureir/europython2025</a>
+    <a href="https://maureira.dev/pycones2026">maureira.dev/pycones2026</a>
     </p>
+  </div>
   </div>
 </section>
 
+    </div>
+  </div>
+
+  <!-- Header/footer content copied into the deck by js/deck.js -->
+  <div id="hidden" style="display: none;">
+    <div id="header">
+      <div id="header-left" style="margin-top: 20px; margin-left: 20px; font-size: 12pt;">
+        <img style="width: 100px;" src="img/logo-vertical-alt-color-dark.svg" />
+      </div>
+      <div id="header-right"></div>
+      <div id="footer-left">
+        <p style="font-size: 16pt; margin-left: 20px;">
+          <i class="python-yellow">PyConES 2026 | </i>
+          <b>@cmaureir</b>
+        </p>
+      </div>
     </div>
   </div>
 
@@ -1538,47 +1254,6 @@ add[grid](x, y, z, x.shape[0])
   <script src="reveal.js/dist/plugin/notes.js"></script>
   <script src="reveal.js/dist/plugin/markdown.js"></script>
   <script src="reveal.js/dist/plugin/highlight.js"></script>
-  <script>
-    // More info about initialization & config:
-    // - https://revealjs.com/initialization/
-    // - https://revealjs.com/config/
-    Reveal.initialize({
-      hash: true,
-
-      // Learn about plugins: https://revealjs.com/plugins/
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-    });
-  </script>
-  <!-- Hack to have a footer-->
-
-  <!-- 1. Style header/footer <div> so they are positioned as desired: in css/qt.css -->
-  <!-- 2. Create hidden header/footer <div> -->
-  <div id="hidden" style="display:none;">
-    <div id="header">
-      <div id="header-left" style="margin-top: 20px; margin-left: 20px; font-size: 12pt;">
-        <img style="width: 100px;" src="img/ep2025.svg" />
-      </div>
-      <div id="header-right"></div>
-      <div id="footer-left">
-        <p style="font-size: 16pt;margin-left: 20px;">
-          <!--<img class="clean-img" src="img/qt_white.png" />-->
-          <i class="python-yellow">EuroPython 2025 | </i>
-          <b>@cmaureir</b>
-      </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-  <script type="text/javascript">
-    // 3. On Reveal.js ready event, copy header/footer <div> into each `.slide-background` <div>
-    var header = $('#header').html();
-    if ( window.location.search.match( /print-pdf/gi ) ) {
-      Reveal.addEventListener( 'ready', function( event ) {
-        $('.slide-background').append(header);
-      });
-    }
-    else {
-      $('div.reveal').append(header);
-     }
-  </script>
+  <script src="js/deck.js"></script>
 </body>
 </html>
