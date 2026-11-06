@@ -605,7 +605,6 @@ ul>li {
 
 .slide-red {
   background: var(--rust-red) !important;
-  background-color: var(--rust-red);
   color: var(--white) !important;
 }
 

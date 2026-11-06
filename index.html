@@ -24,7 +24,7 @@
 <section data-no-header class="full-slide" data-transition="fade-in fade-out" data-background-image="img/background_cover.svg">
   <div class="columns c70-30 v-center">
   <div>
-    <h3>¿Qué viene después de Rust en el ecosistema de Python?</h3>
+    <h2>¿Qué viene después de Rust en el ecosistema de Python?</h2>
     <hr class="yellow-line"/>
   <p class="x80">
   <i class="python-yellow" style="font-size: 3rem;">Cristián</i><br>
@@ -41,14 +41,23 @@
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <h1 class="r-fit-text">Python es <i class="qt-neon">genial</i></h1>
+  <p>(No hay necesidad de mostrar encuestas)</p>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+<section data-auto-animate ="fade-in fade-out" data-background-image="img/background_stars.svg">
   <!-- REMOVE -->
-  <h2>TIOBE: Python sigue siendo el <i class="qt-neon">#1</i></h2>
-  <h1 class="python-yellow">19.23%</h1>
-  <p class="x70">octubre 2026 (-5.23 pts vs. octubre 2025)</p>
-  <p class="x60"><a href="https://www.tiobe.com/tiobe-index/">tiobe.com/tiobe-index/</a></p>
+  <h1 class="r-fit-text">...pero, ¿<i class="rust-red">cuál</i>?</h1>
+</section>
+<section data-auto-animate
+    data-auto-animate="cubic-bezier(0.77, 0, 0.175, 1.0)">
+  <!-- REMOVE -->
+  <img data-id="logo1" data-auto-animate-delay="0.0" style="margin: 20px; width: 130px;" src="img/micropython.png" />
+  <img data-id="logo7" data-auto-animate-delay="0.3" style="margin: 20px; width: 200px;" src="img/logo_graalpy.svg" />
+  <img data-id="logo3" data-auto-animate-delay="0.6" style="margin: 20px; width: 200px;" src="img/jython.png" />
+  <img data-id="logo4" data-auto-animate-delay="0.9" style="margin: 20px; width: 200px; background: white; padding: 10px;" src="img/pypy.svg" />
+  <img data-id="logo5" data-auto-animate-delay="1.2" style="margin: 20px; width: 180px;" src="img/pyston.jpg" />
+  <img data-id="logo6" data-auto-animate-delay="1.5" style="margin: 20px; width: 200px;" src="img/cinder.svg" />
+  <img data-id="logo2" data-auto-animate-delay="1.8" style="margin: 20px; width: 100px;" src="img/rustpython.svg" />
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
@@ -57,42 +66,23 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h1 class="r-fit-text">Mejor...demos</h1>
+  <h1 class="r-fit-text">Mejor... demos</h1>
   <h1 class="r-fit-text">un <i class="qt-lemon">paso atrás</i></h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h1>¿Cuál es el <i class="qt-lemon">Python</i> más antiguo que probaste?</h1>
-</section>
-
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_eggs.svg">
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <!-- REMOVE -->
-    <h2 class="r-fit-text">
-    easy_install
-    </h2>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <!-- REMOVE -->
-    <h2 class="r-fit-text">
-    numarray
-    </h2>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <!-- REMOVE -->
-  <h2 class="r-fit-text">En este escenario</h2>
-  <h2>Algunos lenguajes eran <i class="qt-neon">mejores</i> que <i class="rust-red">otros</i></h2>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <!-- REMOVE -->
-  <h1 class="r-fit-text">...pero bueno, probablemente tengas</h1>
-  <h1 class="r-fit-text">una <i class="qt-lemon">historia similar</i></h1>
+  <h3 data-fragment-index="1">La inspiración de Python</h3>
+  <pre><code>
+  HOW TO RETURN words document:
+    PUT {} IN collection
+    FOR line IN document:
+       FOR word IN split line:
+          IF word not.in collection:
+             INSERT word IN collection
+    RETURN collection
+  </code></pre>
+  <p class="x80" data-fragment-index="3"><i class="qt-lemon">Lenguaje de programación ABC</i></p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
@@ -104,7 +94,9 @@
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h1 class="r-fit-text">Lenguajes de<br>programación</h1>
+  <!-- REMOVE -->
+  <h2 class="r-fit-text">En este escenario</h2>
+  <h2>Algunos lenguajes eran <i class="qt-neon">mejores</i> que <i class="rust-red">otros</i></h2>
 </section>
 
 <section data-background-video="programming_languages.mp4"
@@ -114,53 +106,23 @@
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <!-- REMOVE -->
-  <h3 class="r-fit-text">El lenguaje de programación <i class="qt-lemon">C</i></h3>
+  <h3 class="r-fit-text">El lenguaje de programación <i class="qt-lemon">C</i> (Ritchie &amp; Thompson)</h3>
   <ul>
-  <li class="fragment">Fortran*, BCPL+SMALGOL -> <i class="qt-violet">B</i></li>
-  <li class="fragment">Assembly, NB -> <i class="qt-violet">C</i></li>
+  <li class="fragment">Compilador de Fortran*, BCPL+SMALGOL -> <i class="qt-violet">B</i></li>
+  <li class="fragment">Assembly, NB (<code>char, char*, int*</code>)-> <i class="qt-violet">C</i></li>
   </ul>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <!-- REMOVE -->
-  <h3 class="fragment" data-fragment-index="1">La inspiración de Python</h3>
-  <pre><code>
-  HOW TO RETURN words document:
-    PUT {} IN collection
-    FOR line IN document:
-       FOR word IN split line:
-          IF word not.in collection:
-             INSERT word IN collection
-    RETURN collection
-  </code></pre>
-  <p class="fragment x80" data-fragment-index="3"><i class="qt-lemon">Lenguaje de programación ABC</i></p>
+<h1><i class="python-yellow">C</i>Python</h1>
+<p class="fragment">(Rumores dicen que la C es de Canónico, no de C) </p>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <!-- REMOVE -->
-  <h3 class="r-fit-text">¿Qué Python?</h3>
-</section>
-
-<section data-auto-animate data-background-image="img/background_stars.svg"
-    data-auto-animate="cubic-bezier(0.77, 0, 0.175, 1.0)">
-  <!-- REMOVE -->
-  <img data-id="logo1" data-auto-animate-delay="0.0" style="margin: 20px; width: 130px;" src="img/micropython.png" />
-  <img data-id="logo7" data-auto-animate-delay="0.3" style="margin: 20px; width: 200px;" src="img/logo_graalpy.svg" />
-  <img data-id="logo3" data-auto-animate-delay="0.6" style="margin: 20px; width: 200px;" src="img/jython.png" />
-  <img data-id="logo4" data-auto-animate-delay="0.9" style="margin: 20px; width: 200px; background: white; padding: 10px;" src="img/pypy.svg" />
-  <img data-id="logo5" data-auto-animate-delay="1.2" style="margin: 20px; width: 180px;" src="img/pyston.jpg" />
-  <img data-id="logo6" data-auto-animate-delay="1.5" style="margin: 20px; width: 200px;" src="img/cinder.svg" />
-  <img data-id="logo2" data-auto-animate-delay="1.8" style="margin: 20px; width: 100px;" src="img/rustpython.svg" />
-  <img data-id="logo8" data-auto-animate-delay="2.1" style="margin: 20px; width: 180px;" src="img/logo_mojo.png" />
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
-  <h1>Python fue <i class="qt-lemon">inspirado</i> por ABC y <i class="qt-lemon">escrito</i> en C</h1>
-</section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_snakestar.png">
-  <h1>¿Por qué eso es una <i class="qt-neon">buena noticia</i>?</h1>
-  <h3 class="fragment"><i class="qt-lemon">C puede "hablar" con muchos otros lenguajes</i></h3>
+  <h1>¿Por qué eso es una<br><i class="qt-neon">buena noticia</i>?</h1>
+  <h3 class="fragment">C puede "hablar" con muchos otros lenguajes</h3>
+  <h3 class="fragment">Y esa es la clave del éxito</h3>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-color="rgb(17, 14, 83)">
@@ -191,17 +153,60 @@
 
 <section data-transition="fade-in fade-out">
   <h3>Extensión de Python con C</h3>
-  <pre style="font-size: 60%;width: 90%;"><code class="c" data-trim data-noescape>
-    static PyObject* hello(PyObject* self, PyObject* args) {
-        char *msg = "Hello PyCon ES 2026!";
-        return Py_BuildValue("s", msg);
-    }
+  <div class="columns c50-50">
+  <div>
+    <pre style="font-size: 44%;"><code class="c" data-trim data-noescape>
+// pycones2026.c
+#include &lt;Python.h&gt;
 
-    static PyMethodDef functions[] = {
-        {"hello", (PyCFunction)hello, METH_NOARGS, NULL},
-        {NULL, NULL, 0, NULL}
-    };
-  </code></pre>
+static PyObject* hello(PyObject* self, PyObject* args) {
+    char *msg = "Hello PyCon ES 2026!";
+    return Py_BuildValue("s", msg);
+}
+
+static PyMethodDef functions[] = {
+    {"hello", (PyCFunction)hello, METH_NOARGS, NULL},
+    {NULL, NULL, 0, NULL}
+};
+
+static struct PyModuleDef module = {
+    PyModuleDef_HEAD_INIT,
+    "pycones2026",   // nombre del módulo
+    NULL,            // documentación
+    -1,              // estado por intérprete
+    functions
+};
+
+PyMODINIT_FUNC PyInit_pycones2026(void) {
+    return PyModule_Create(&amp;module);
+}
+    </code></pre>
+  </div>
+  <div>
+    <pre style="font-size: 44%;"><code class="toml" data-trim data-noescape>
+# pyproject.toml
+[build-system]
+requires = ["setuptools&gt;=74.1"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycones2026"
+version = "0.1.0"
+
+[tool.setuptools]
+ext-modules = [
+  {name = "pycones2026", sources = ["pycones2026.c"]}
+]
+    </code></pre>
+    <pre style="font-size: 44%;"><code class="bash" data-trim data-noescape>
+$ pip install .
+$ python
+>>> from pycones2026 import hello
+>>> print(hello())
+Hello PyCon ES 2026!
+    </code></pre>
+  </div>
+  </div>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
@@ -259,18 +264,31 @@
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <!-- REMOVE -->
-  <h1 class="r-fit-text">Entonces, ¿por qué <i class="rust-red">no</i> usamos C?</h1>
+  <h1 class="r-fit-text">Entonces, ¿por qué <i class="rust-red">seguimos</i> usando C?</h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
-  <h1>Entonces, ¿cuáles son nuestras opciones?</h1>
+  <h1>¿cuáles son nuestras <i class="python-yellow">opciones</i>?</h1>
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2>Swift</h2>
-  <div class="columns c30-70 v-center">
+  <div class="columns c70-30 v-center">
   <div>
-    <img src="img/swift.png" />
+    <h2>Swift</h2>
+  </div>
+  <div>
+    <img style="display: block; margin-left: auto; width: 140px;" src="img/swift.png" />
+  </div>
+  </div>
+  <div class="columns c50-50 v-center">
+  <div>
+    <pre style="font-size: 50%;"><code class="swift" data-trim data-noescape>
+func add(_ a: Int, _ b: Int) -&gt; Int {
+    return a + b
+}
+
+print(add(2, 3))   // 5
+    </code></pre>
   </div>
   <div>
     <ul class="x80">
@@ -280,7 +298,11 @@
       <li>Seguridad de memoria (refcount automático)</li>
       <li>Inferencia de tipos</li>
       <li>¡Tiene REPL!</li>
-      <li>Encadenamiento opcional</li>
+      <li>Encadenamiento opcional
+        <ul class="x80">
+          <li><code>let name = person.address?.city</code></li>
+        </ul>
+      </li>
       <li>POO</li>
     </ul>
   </div>
@@ -289,10 +311,25 @@
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2>Erlang</h2>
-  <div class="columns c30-70 v-center">
+  <div class="columns c70-30 v-center">
   <div>
-    <img src="img/erlang.svg" />
+    <h2>Erlang</h2>
+  </div>
+  <div>
+    <img style="display: block; margin-left: auto; width: 140px;" src="img/erlang.svg" />
+  </div>
+  </div>
+  <div class="columns c50-50 v-center">
+  <div>
+    <pre style="font-size: 50%;"><code class="erlang" data-trim data-noescape>
+-module(calc).
+-export([add/2]).
+
+add(A, B) -&gt; A + B.
+
+%% 1&gt; calc:add(2, 3).
+%% 5
+    </code></pre>
   </div>
   <div>
     <ul class="x80">
@@ -303,7 +340,7 @@
       <li>Aislamiento de procesos</li>
       <li>Modelo de concurrencia</li>
       <li>Cero tiempo de inactividad al actualizar código</li>
-      <li>VM BEAM (Elixir y gleam)</li>
+      <li>VM BEAM (Elixir y Gleam)</li>
     </ul>
   </div>
   </div>
@@ -311,17 +348,34 @@
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2>Gleam</h2>
-  <div class="columns c30-70 v-center">
+  <div class="columns c70-30 v-center">
   <div>
-    <img src="img/logo_gleam.svg" />
+    <h2>Gleam</h2>
+  </div>
+  <div>
+    <img style="display: block; margin-left: auto; width: 140px;" src="img/logo_gleam.svg" />
+  </div>
+  </div>
+  <div class="columns c50-50 v-center">
+  <div>
+    <pre style="font-size: 50%;"><code class="rust" data-trim data-noescape>
+import gleam/int
+import gleam/io
+
+pub fn add(a: Int, b: Int) -&gt; Int {
+  a + b
+}
+
+pub fn main() {
+  io.println(int.to_string(add(2, 3)))
+}
+    </code></pre>
   </div>
   <div>
     <ul class="x80">
-      <li class="fragment">Tipado estático, sintaxis simple</li>
-      <li class="fragment">Corre sobre la <i class="qt-lemon">BEAM</i> (Erlang) y también compila a <i class="qt-lemon">JavaScript</i></li>
-      <li class="fragment">Hereda concurrencia y tolerancia a fallos de Erlang</li>
-      <li class="fragment"><i class="rust-red">Sin historia de extensiones para Python... todavía</i></li>
+      <li>Tipado estático, sintaxis simple</li>
+      <li>Corre sobre la <i class="qt-lemon">BEAM</i> (Erlang) y también compila a <i class="qt-lemon">JavaScript</i></li>
+      <li>Hereda concurrencia y tolerancia a fallos de Erlang</li>
     </ul>
   </div>
   </div>
@@ -329,16 +383,29 @@
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h2>Julia</h2>
-  <div class="columns c30-70 v-center">
+  <div class="columns c70-30 v-center">
   <div>
-    <img src="img/julia.svg" />
+    <h2>Julia</h2>
+  </div>
+  <div>
+    <img style="display: block; margin-left: auto; width: 140px;" src="img/julia.svg" />
+  </div>
+  </div>
+  <div class="columns c50-50 v-center">
+  <div>
+    <pre style="font-size: 50%;"><code class="julia" data-trim data-noescape>
+function add(a::Int, b::Int)::Int
+    return a + b
+end
+
+println(add(2, 3))   # 5
+    </code></pre>
   </div>
   <div>
     <ul class="x80">
       <li>2012</li>
       <li>Velocidad de C, sensación de R/Python/Matlab</li>
-      <li>JIT</li>
+      <li>JIT <i>(PEP 836 😭)</i></li>
       <li>Sistema de tipos paramétricos flexible</li>
       <li>Funciones con despacho múltiple</li>
       <li>Sin POO (tipos compuestos mediante structs)</li>
@@ -462,29 +529,56 @@ main: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linke
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h3>Ziggy PyDust (Zig)</h3>
+  <h3>PyOZ (Zig)</h3>
   <pre style="font-size: 50%; width: 90%;"><code class="zig" data-trim data-noescape>
-  const py = @import("pydust");
+  const pyoz = @import("PyOZ");
 
-  pub fn add(args: struct { a: i32, b: i32 }) i32 {
-      return args.a + args.b;
+  fn add(a: i64, b: i64) i64 {
+      return a + b;
   }
 
-  comptime {
-    py.rootmodule(@This());
-  }
+  pub const Module = pyoz.module(.{
+      .name = "mymodule",
+      .funcs = &amp;.{
+          pyoz.func("add", add, "Suma dos números"),
+      },
+  });
   </code></pre>
   <pre style="font-size: 50%; width: 90%;"><code class="bash" data-trim data-noescape>
-  $ poetry install
+  $ pip install pyoz
+  $ pyoz init myproject &amp;&amp; cd myproject
+  $ pyoz develop
   </code></pre>
+  <p class="x60"><i class="qt-lemon">Nota:</i> Ziggy PyDust está un poco estancado</p>
 </section>
 
 
-<section class="slide-red" data-transition="fade-in fade-out">
-  ¡Pero no has mencionado Rust!
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h1>No solo Python está <i class="qt-lemon">aprendiendo</i> de otros lenguajes</h1>
 </section>
 
-<section class="slide-red" data-transition="fade-in fade-out">
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h2>Qt Bridges</h2>
+  <div class="columns c40-60 v-center">
+  <div>
+    <img src="img/qt_white.png" />
+  </div>
+  <div>
+    <ul>
+      <li>Framework de C++</li>
+      <li>No son bindings 1:1</li>
+      <li>Integrado con Swift, Java/Kotlin, Python, <i class="qt-neon">C# y Rust</i></i></li>
+      <li><i class="qt-lemon">Más lenguajes para el futuro de Qt</i></li>
+      <li><a href="https://qt.io/qt-bridges">qt.io/qt-bridges</a></li>
+    </ul>
+  </div>
+  </div>
+</section>
+<section data-background-color="#d34516" data-transition="fade-in fade-out">
+  <h1>¡Pero no has mencionado Rust!</h1>
+</section>
+
+<section data-background-color="#d34516" data-transition="fade-in fade-out">
   <img style="width: 50%;"src="img/rust_logo.svg"/>
 </section>
 
@@ -500,7 +594,7 @@ main: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linke
       </li>
       <li class="fragment"><i class="qt-lemon">Fiabilidad</i>
         <ul class="x70">
-          <li>Sistema de tipos rico y modelo de ownership (seguridad de memoria e hilos)</li>
+          <li>Sistema de tipos rico y modelo de ownership (seguridad de memoria e hilos).</li>
         </ul>
       </li>
       <li class="fragment"><i class="qt-lemon">Productividad</i>
@@ -526,7 +620,7 @@ main: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linke
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <h1>¿Por qué lo adoptamos?</h1>
+  <h1>¿Por qué lo estamos adoptando?</h1>
 </section>
 
 <section data-transition="fade-in fade-out">
@@ -658,25 +752,54 @@ Hello, world!
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <h1>Herramientas, sistemas centrales, toolchain, kernel</h1>
+  <h2>Rust en <i class="qt-lemon">PyPI</i></h2>
+  <div class="columns c3 v-center">
+  <div class="fragment">
+    <h1 class="python-yellow">6+</h1>
+    <p class="x60">de los 100 paquetes más descargados usan Rust</p>
+  </div>
+  <div class="fragment">
+    <h1 class="python-yellow">~33%</h1>
+    <p class="x60">del código nativo nuevo en PyPI es Rust</p>
+  </div>
+  <div class="fragment">
+    <h1 class="python-yellow">27% &rarr; 33%</h1>
+    <p class="x60">de autores de extensiones que eligen Rust, en un año</p>
+  </div>
+  </div>
+  <p class="x40">top-pypi-packages (30 días hasta 2026-10-01); David Hewitt, Python Language Summit 2025; JetBrains, State of Python 2025</p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
+  <h2>Probablemente <i class="qt-lemon">ya usas Rust</i> sin saberlo</h2>
+  <ul class="x80">
+    <li class="fragment"><code>rpds-py</code>: 470M de descargas en 30 días, dependencia de <code>jsonschema</code></li>
+    <li class="fragment"><code>jiter</code>: 317M, lo usan <code>openai</code> y <code>anthropic</code></li>
+    <li class="fragment"><code>tokenizers</code>: 167M, lo usa <code>transformers</code></li>
+    <li class="fragment"><i class="qt-neon">Una dependencia transitiva que nadie eligió</i></li>
+  </ul>
+  <p class="x40">pypistats.org, octubre 2026</p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
+  <h1>Rust ya está en <i class="qt-lemon">muchos otros lugares</i></h1>
+  <h3>Herramientas, sistemas centrales, toolchain, kernel</h3>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_scary.png" data-background-opacity="0.3">
-  <h3>Y los gobiernos <i class="qt-lemon">lo notaron</i></h3>
-  <dl class="timeline">
-    <dt>2022&ndash;24</dt><dd><b>NSA, CISA, Casa Blanca</b>: hojas de ruta hacia lenguajes con memoria segura,
-                        con Rust entre las alternativas</dd>
-    <dt class="now">2026&ndash;27</dt><dd><b>Ley de Ciberresiliencia de la UE (CRA)</b>: recae sobre las empresas
-                        que distribuyen Python, C++ <i>y</i> Rust</dd>
-  </dl>
+  <h2>Incluso los gobiernos <i class="qt-lemon">lo saben</i></h2>
+    <h4><i class="qt-lemon">(2022 - 2024)</i> NSA, CISA, Casa Blanca: hojas de ruta hacia lenguajes con memoria segura,
+                        con Rust entre las alternativas</h4>
+    <h4><i class="qt-lemon">(2026 - 2027)</i> Ley de Ciberresiliencia de la UE (CRA): recae sobre las empresas
+                        que distribuyen Python, C++ y Rust</h4>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <h1>Rust es <i class="qt-neon">genial</i></h1>
+  <h1>Rust es <i class="qt-neon">rápido</i></h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <h3>pero...</h3>
+  <h3>pero... ¿es realmente la mejor opción?</h3>
 </section>
 
 <section data-transition="fade-in fade-out">
@@ -724,8 +847,8 @@ Hello, world!
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
   <!-- REMOVE -->
-  <h1 class="r-fit-text">Pfff...seguro que</h1>
-  <h1 class="r-fit-text">optimizaste la impl. de C++</h1>
+  <h1 class="r-fit-text">"Pfff... seguro que</h1>
+  <h1 class="r-fit-text">optimizaste la implementación de C++"</h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
@@ -778,7 +901,7 @@ Hello, world!
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <h2>Si C++ es más rápido, <br>¿por qué no lo usamos? 🤔</h2>
+  <h2>Si C++ es <i class="qt-neon">más rápido</i>, <br>¿por qué no lo usamos? 🤔</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/flame.gif">
@@ -787,36 +910,7 @@ Hello, world!
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <!-- REMOVE -->
-  <h3>Modern C++ <i class="qt-lemon">C++11</i> (1/2)</h3>
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
-  // tipo 'auto'
-  auto a = 0.74;
-  auto b = "hello";
-  </code></pre>
-
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="2"><code class="c++" data-trim data-noescape>
-  // tuplas
-  auto triple = std::make_tuple(1,2,3);
-  std::tie(x, y, z) = triple;
-  </code></pre>
-
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
-  // diccionarios
-  auto d = std::unordered_map&lt;int,std::string&gt;({4, "Mary"},
-                                               {2, "John"});
-  auto value = d[4];
-  </code></pre>
-
-  <pre style="font-size: 55%; width: 92%;" class="fragment fade-in" data-fragment-index="4"><code class="c++" data-trim data-noescape>
-  // lambdas
-  std::sort(v.begin(), v.end(),
-        [](int x, int y) { return std::abs(x) < std::abs(y)});
-  </code></pre>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <h3>Modern C++ <i class="qt-lemon">C++20</i> (2/2)</h3>
+  <h3>C++ moderno: <i class="qt-lemon">C++20</i></h3>
   <div class="columns c50-50">
   <div>
   <pre style="font-size: 50%; width: 90%;" class="fragment fade-in" data-fragment-index="1"><code class="c++" data-trim data-noescape>
@@ -853,66 +947,97 @@ Hello, world!
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
-  <h1 class="r-fit-text">¿Tiene C++</h1>
-  <h1 class="r-fit-text">un <i class="qt-lemon">sucesor</i>?</h1>
-</section>
-
-<section data-transition="fade-in fade-out">
-  <!-- REMOVE -->
-  <img style="width: 50%" src="img/carbon_logo.png" />
-</section>
-
-<section data-transition="fade-in fade-out">
-  <!-- REMOVE -->
-  <h3>Carbon</h3>
+  <h3>C++ moderno: <i class="qt-lemon">C++23</i></h3>
   <div class="columns c50-50">
   <div>
-    <ul class="x80">
-      <li class="fragment"><i class="qt-lemon">En desarrollo</i></li>
-      <li class="fragment">Enfoque de sucesor</li>
-      <li class="fragment">Interoperabilidad (C++ ⇄ Carbon)</li>
-      <li class="fragment">Sistema genérico moderno</li>
-      <li class="fragment"><i class="qt-mandarin">Estrategia de seguridad</i> (plan de migración)</li>
-    </ul>
+    <pre style="font-size: 46%;" class="fragment fade-in" data-fragment-index="1"><code class="cpp" data-trim data-noescape>
+// manejo de errores sin excepciones
+using std;
+expected&lt;int, string&gt; parse(string_view s);
+
+auto doble = parse("21").transform(
+    [](int x) { return x * 2; });
+    </code></pre>
+    <pre style="font-size: 46%;" class="fragment fade-in" data-fragment-index="2"><code class="cpp" data-trim data-noescape>
+import std;   // adiós #include
+
+std::println("Resultado: {}", doble.value_or(-1));
+    </code></pre>
   </div>
   <div>
-    <pre style="font-size: 34%;width: 90%;"><code class="cpp" data-trim data-noescape>
-    package hello api;
-
-    fn Main() -&gt; i32 {
-      var s: auto = "Hello, world!";
-      Print(s);
-      return 0;
-    }
+    <pre style="font-size: 46%;" class="fragment fade-in" data-fragment-index="3"><code class="cpp" data-trim data-noescape>
+// subíndice multidimensional
+std::mdspan m(datos, 3, 4);
+m[1, 2] = 42;   // en vez de m[1][2]
     </code></pre>
-    <pre style="font-size: 50%;width: 90%;"><code class="bash" data-trim data-noescape>
-    $ ./explorer hello.carbon
-    Hello, world!
+    <pre style="font-size: 46%;" class="fragment fade-in" data-fragment-index="4"><code class="cpp" data-trim data-noescape>
+// "deducing this"
+struct Contador {
+  int n = 0;
+  auto&amp;&amp; get(this auto&amp;&amp; self) { return self.n; }
+};
     </code></pre>
   </div>
   </div>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> resultados explícitos (<code>expected</code>) en vez de solo excepciones</p>
 </section>
 
-<section data-transition="fade-in fade-out">
-  <h3>Carbon - Aspectos destacados</h3>
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+  <h3>C++ moderno: <i class="qt-lemon">C++26</i></h3>
+  <p class="x60">Técnicamente completo en marzo de 2026; publicación esperada a fines de 2026</p>
   <div class="columns c50-50">
   <div>
+    <pre style="font-size: 40%;" class="fragment fade-in" data-fragment-index="1"><code class="cpp" data-trim data-noescape>
+// reflexión: C++ se inspecciona en compilación
+// Color(valor).name in Python
+template &lt;typename E&gt;
+constexpr std::string_view a_texto(E valor) {
+  template for (constexpr auto e :
+      std::define_static_array(
+          std::meta::enumerators_of(^^E))) {
+    if (valor == [:e:])
+      return std::meta::identifier_of(e);
+  }
+  return "&lt;desconocido&gt;";
+}
+    </code></pre>
+  </div>
+  <div>
+    <pre style="font-size: 40%;" class="fragment fade-in" data-fragment-index="2"><code class="cpp" data-trim data-noescape>
+// contratos
+double mi_sqrt(double x)
+    pre(x &gt;= 0.0)
+    post(r : r &gt;= 0.0)
+{ return std::sqrt(x); }
+    </code></pre>
+    <pre style="font-size: 40%;" class="fragment fade-in" data-fragment-index="3"><code class="cpp" data-trim data-noescape>
+// leer una variable sin inicializar
+int f() {
+  int x;
+  return x;   // comportamiento erróneo, ya no es UB
+}
+int y [[indeterminate]];  // opt-out explícito
+    </code></pre>
+  </div>
+  </div>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> la seguridad se logra por defecto y con opt-out explícito, no con reglas aparte</p>
+</section>
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+  <h3>C++ moderno: <i class="qt-lemon">C++29</i> y después</h3>
   <ul class="x80">
-    <li class="fragment">Google, 2022: un <i class="qt-lemon">sucesor</i>, no un dialecto</li>
-    <li class="fragment">La interoperabilidad con C++ es todo el punto</li>
-    <li class="fragment">Chequeos de memoria y data races en compilación, <i class="qt-lemon">sin</i> <code>&amp;mut</code> exclusivo</li>
-    <li class="fragment">Plan: modo <i class="qt-mandarin">permisivo</i> &rarr; modo <i class="qt-mandarin">estricto</i></li>
-    <li class="fragment"><i class="rust-red">Aún experimental</i></li>
+    <li class="fragment"><i class="qt-mandarin">Pattern matching</i> (Python lo tiene desde 3.10)</li>
+    <li class="fragment">Trivial relocatability</li>
+    <li class="fragment">Enforcement de contratos y colas concurrentes</li>
+    <li class="fragment">Redes sobre <code>std::execution</code> (async con senders y receivers)</li>
+    <li class="fragment"><i class="qt-lemon">Profiles</i>: fuera de C++26, siguen en discusión</li>
   </ul>
-  </div>
-  <div class="fragment">
-    <a href="https://www.youtube.com/watch?v=1ZTJ9omXOQ0" target="_blank"><img style="width: 560px;" src="img/yt_1ZTJ9omXOQ0.jpg" /></a>
-    <p class="x40">Carbon Language Successor Strategy: From C++ Interop to Memory Safety - Chandler Carruth - CppNow 23 </p>
-  </div>
-  </div>
-  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> migración gradual con interoperabilidad, justo lo que busca Rust en CPython</p>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> C++ avanza adoptando ideas de otros lenguajes, igual que Python</p>
 </section>
 
+<section>
+  <h2>No me digan que C++ <i class="rust-red">no se preocupa</i> por la seguridad</h2>
+</section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
   <!-- REMOVE -->
@@ -932,7 +1057,7 @@ Hello, world!
   <div class="columns c60-40 v-start">
   <div>
     <pre style="font-size: 46%;"><code class="cpp" data-trim data-noescape>
-// sintaxis propuesta (P3081 / P3589), aún cambiando
+// sintaxis propuesta (P3081 / P3589), todavía en discusión
 [[profiles::enforce(bounds_safety)]];
 [[profiles::enforce(type_safety)]];
 
@@ -994,6 +1119,70 @@ int main() safe {
 </section>
 
 
+<section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
+  <h1>¿Tiene C++</h1>
+  <h1>un <i class="qt-lemon">sucesor</i>?</h1>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <!-- REMOVE -->
+  <img style="width: 50%" src="img/carbon_logo.png" />
+</section>
+
+<section data-transition="fade-in fade-out">
+  <!-- REMOVE -->
+  <h3>Carbon</h3>
+  <div class="columns c50-50">
+  <div>
+    <ul class="x80">
+      <li class="fragment"><i class="qt-lemon">En desarrollo</i></li>
+      <li class="fragment">Enfoque de sucesor</li>
+      <li class="fragment">Interoperabilidad (C++ ⇄ Carbon)</li>
+      <li class="fragment">Sistema genérico moderno</li>
+      <li class="fragment"><i class="qt-mandarin">Estrategia de seguridad</i> (plan de migración)</li>
+    </ul>
+  </div>
+  <div>
+    <pre style="font-size: 34%;width: 90%;"><code class="cpp" data-trim data-noescape>
+    package hello api;
+
+    fn Main() -&gt; i32 {
+      var s: auto = "Hello, world!";
+      Print(s);
+      return 0;
+    }
+    </code></pre>
+    <pre style="font-size: 50%;width: 90%;"><code class="bash" data-trim data-noescape>
+    $ ./explorer hello.carbon
+    Hello, world!
+    </code></pre>
+  </div>
+  </div>
+</section>
+
+<section data-transition="fade-in fade-out">
+  <h3>Carbon - Aspectos destacados</h3>
+  <div class="columns c50-50">
+  <div>
+  <ul class="x80">
+    <li class="fragment">Google, 2022: un <i class="qt-lemon">sucesor</i>, no un dialecto</li>
+    <li class="fragment">La interoperabilidad con C++ es el objetivo central</li>
+    <li class="fragment">Chequeos de memoria y data races en compilación, <i class="qt-lemon">sin</i> <code>&amp;mut</code> exclusivo</li>
+    <li class="fragment">Plan: modo <i class="qt-mandarin">permisivo</i> &rarr; modo <i class="qt-mandarin">estricto</i></li>
+    <li class="fragment"><i class="rust-red">Aún experimental</i></li>
+  </ul>
+  </div>
+  <div class="fragment">
+    <a href="https://www.youtube.com/watch?v=WJl4ftb5Fxg" target="_blank"><img style="width: 560px;" src="img/yt_WJl4ftb5Fxg.jpg" /></a>
+    <p class="x40">Carbon: graduating from the experiment - Chandler Carruth - NDC Toronto 2026</p>
+  </div>
+  </div>
+  <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> migración gradual con interoperabilidad, justo lo que busca Rust en CPython</p>
+</section>
+
+
+
+
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
   <h1 class="r-fit-text">Volviendo a Rust: si es tan bueno</h1>
   <h1 class="r-fit-text">¿por qué no una <i class="qt-neon">reescritura completa</i>?</h1>
@@ -1013,20 +1202,20 @@ int main() safe {
   <h2>Rust para CPython (2/2)</h2>
   <div class="columns c50-50">
   <div>
-    <h4>Criterios de éxito</h4>
-    <ul class="x70">
-      <li class="fragment">La mayoría de core devs abiertos a usar la API de Rust</li>
-      <li class="fragment">Sin lentitud en los benchmarks de CPython</li>
-      <li class="fragment">Rust soporta todas las plataformas con tier</li>
+    <h4><i class="qt-lemon">Criterios de éxito</i></h4>
+    <ul class="x70 fragment">
+      <li>La mayoría de los core devs está abierta a usar la API de Rust</li>
+      <li>Sin lentitud en los benchmarks de CPython</li>
+      <li>Rust soporta todas las plataformas con tier</li>
     </ul>
   </div>
   <div>
-    <h4>Preocupaciones</h4>
-    <ul class="x70">
-      <li class="fragment">Portabilidad entre plataformas</li>
-      <li class="fragment">No todos conocen Rust</li>
-      <li class="fragment">Dependencias de Cargo (zlib-rs)</li>
-      <li class="fragment">Rust no elimina todos los bugs</li>
+    <h4><i class="rust-red">Preocupaciones</i></h4>
+    <ul class="x70 fragment">
+      <li>Portabilidad entre plataformas</li>
+      <li>No todos conocen Rust</li>
+      <li>Dependencias de Cargo (zlib-rs)</li>
+      <li>Rust no elimina todos los bugs</li>
     </ul>
   </div>
   </div>
@@ -1040,7 +1229,7 @@ int main() safe {
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
   <h2>mojo 🔥 (1/2)</h2>
-  <p>Front-end <i class="qt-lemon">con sabor a</i> Python sobre un <i class="qt-lemon">poderoso backend de llvm</i> para generar código nativo</p>
+  <p>Front-end <i class="qt-lemon">con sabor a</i> Python sobre un <i class="qt-lemon">poderoso backend de LLVM</i> para generar código nativo</p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_solarsystem.png">
@@ -1082,8 +1271,8 @@ def main():
   <tr><td><i class="qt-lemon">C</i></td><td>API de C de CPython</td></tr>
   <tr><td><i class="qt-lemon">C++</i></td><td>nanobind (ABI estable desde Python 3.12)</td></tr>
   <tr><td><i class="qt-lemon">Rust</i></td><td>PyO3</td></tr>
-  <tr><td><i class="qt-lemon">Zig</i></td><td>Ziggy Pydust, py.zig</td></tr>
-  <tr><td><i class="qt-lemon">Mojo</i></td><td>Importa módulos de Python, y Python llama a Mojo</td></tr>
+  <tr><td><i class="qt-lemon">Zig</i></td><td>PyOZ, py.zig</td></tr>
+  <tr><td><i class="qt-lemon">Mojo</i></td><td>Importa módulos de Python y Python llama a Mojo</td></tr>
   </table>
 </section>
 
@@ -1092,12 +1281,12 @@ def main():
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h3><i class="qt-lemon">¿Cuál es nuestro objetivo?</i></h3>
-  <h2>¿Hacer Python más rápido?<br>¿o movernos a un nuevo lenguaje?</h2>
+  (código)
 </section>
 
 <section data-transition="fade-in fade-out">
-  <h1>Próximas características de Python</h1>
+  <h3><i class="qt-lemon">¿Cuál es nuestro objetivo?</i></h3>
+  <h2>¿Hacer Python más rápido?<br>¿O movernos a un nuevo lenguaje?</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
@@ -1118,39 +1307,18 @@ def main():
     <li class="fragment"><i class="python-yellow">PEP 779</i> - soportado oficialmente desde <i class="python-yellow">3.14</i></li>
     <li class="fragment">El GIL sigue siendo el predeterminado; sin versión comprometida para cambiarlo</li>
     <li class="fragment"><i class="python-yellow">PEP 734</i> - múltiples intérpretes (<code>concurrent.interpreters</code>) desde <i class="python-yellow">3.14</i></li>
-    <li class="fragment"><i class="rust-red">Las extensiones en C necesitan recompilarse</i></li>
+    <li class="fragment"><i class="rust-red">Las extensiones en C necesitan recompilarse (<code>cp314t</code>) y ser seguras para hilos</i></li>
   </ul>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h2>Cómo cambia Python hoy</h2>
-  <h3 class="x80">Criterios de éxito antes de aceptar un cambio grande</h3>
-  <ul class="x80">
-    <li class="fragment">Free-threading (PEP 779)</li>
-    <li class="fragment">JIT (PEP 836, retirado)</li>
-    <li class="fragment">Rust en CPython (PEP en preparación)</li>
-  </ul>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <!-- REMOVE -->
-    <h2>Antes de la VM</h2>
-    <div class="r-hstack justify-center" style="font-size: 70%;">
-        <div>Bytecode</div>
-        <div class="fragment" data-fragment-index="2" style="margin-left: 15px;">➡️</div>
-        <div class="fragment" data-fragment-index="2" style="margin: 40px;">Bytecode<br>especializado</div>
-        <div class="fragment" data-fragment-index="3">➡️</div>
-        <div class="fragment" data-fragment-index="3" style="margin: 40px;">Trazas de<br>Micro-Op</div>
-        <div class="fragment" data-fragment-index="4">➡️</div>
-        <div class="fragment" data-fragment-index="4" style="margin: 40px;">Trazas de<br>Micro-Op<br>optimizadas</div>
-    </div>
-    <p class="x50">
-    Brandt Bucher: <a href="https://www.youtube.com/watch?v=kMO3Ju0QCDo">Construyendo un compilador JIT para CPython</a> (PyCon US 2024)
-    </p>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
   <h1>¿Es C <i class="qt-neon">suficientemente bueno</i><br>para ser la base del <i class="qt-lemon">Python estándar</i>?</h1>
+</section>
+
+
+<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
+  <h1 class="r-fit-text">Gran parte del futuro de Python</h1>
+  <h1 class="r-fit-text">se decidirá <i class="qt-lemon">fuera de Python</i></h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_sign.png">
@@ -1164,7 +1332,7 @@ def main():
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_sign.png">
   <h3><i class="qt-lemon">Opción 2</i></h3>
-  <h2>Entra en juego otro <i class="qt-lemon">&lt;lang&gt;</i>, y empezamos de nuevo reescribiendo nuestras herramientas y módulos en él.</h2>
+  <h2>Entra en juego otro <i class="qt-lemon">&lt;lang&gt;</i> y empezamos de nuevo reescribiendo nuestras herramientas y módulos en él.</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_sign.png">
@@ -1174,7 +1342,7 @@ def main():
 
 <section data-transition="fade-in fade-out" data-background-image="img/rainy.gif">
   <h3><i class="qt-lemon">Opción 4</i></h3>
-  <h2>Nos enojamos, lo dejamos todo y seguimos adelante...</h2>
+  <h2>Nos enojamos, lo dejamos todo y seguimos adelante con otro lenguaje...</h2>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
@@ -1183,34 +1351,13 @@ def main():
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h1>Mientras más lenguajes entendamos...</h1>
+  <h1>Mientras <i class="qt-lemon">más lenguajes</i> entendamos...</h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h1>..más podremos<br>darle forma al <i class="qt-lemon">futuro</i> de Python.</h1>
+  <h1>...más podremos<br>darle forma al <i class="qt-lemon">futuro</i> de Python.</h1>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h1>No solo Python está <i class="qt-lemon">aprendiendo</i> de otros lenguajes</h1>
-</section>
-
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h2>Qt Bridges</h2>
-  <div class="columns c40-60 v-center">
-  <div>
-    <img src="img/qt_white.png" />
-  </div>
-  <div>
-    <ul>
-      <li>Framework de C++</li>
-      <li>No son bindings 1:1</li>
-      <li><i class="qt-neon">Integrado con Swift, Java, C#, Rust y Python</i></li>
-      <li><i class="qt-lemon">Más lenguajes para el futuro de Qt</i></li>
-      <li><a href="https://qt.io/qt-bridges">qt.io/qt-bridges</a></li>
-    </ul>
-  </div>
-  </div>
-</section>
 
 <section data-no-header class="full-slide" data-transition="fade-in fade-out" data-background-image="img/background_backcover.svg">
   <div class="columns c60-40 v-center">
