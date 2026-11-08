@@ -424,11 +424,11 @@ println(add(2, 3))   # 5
   <h3>Zig</h3>
   <div class="columns c50-50">
   <div>
-    <ul class="x80">
-      <li class="fragment">Sin <i class="qt-mandarin">flujo de control</i> ni <i class="qt-mandarin">reserva de memoria</i> ocultos</li>
-      <li class="fragment">Sin preprocesador, sin macros</li>
-      <li class="fragment"><i class="qt-mandarin">Metaprogramación</i>: ejecución de código en tiempo de compilación y evaluación perezosa (<code><i class="qt-lemon">comptime</i></code>)</li>
-      <li class="fragment">¡Tests, tests, tests!</li>
+    <ul class="x80 fragment">
+      <li>Sin <i class="qt-mandarin">flujo de control</i> ni <i class="qt-mandarin">reserva de memoria</i> ocultos</li>
+      <li>Sin preprocesador, sin macros</li>
+      <li><i class="qt-mandarin">Metaprogramación</i>: ejecución de código en tiempo de compilación y evaluación perezosa (<code><i class="qt-lemon">comptime</i></code>)</li>
+      <li>¡Tests, tests, tests!</li>
     </ul>
   </div>
   <div>
@@ -514,13 +514,13 @@ pub fn main() void {
   <h3>Zig - Aspectos destacados (3/3)</h3>
   <h4>Compilación cruzada</h4>
   </code></pre>
-  <pre class="fragment" style="font-size: 38%;width: 95%;"><code class="bash" data-trim data-noescape>
+  <pre style="font-size: 38%;width: 95%;"><code class="bash" data-trim data-noescape>
 $  zig build-exe src/main.zig -target x86_64-windows-gnu
 $  file main.exe
 main.exe: PE32+ executable (console) x86-64, for MS Windows, 7 sections
   </code></pre>
 
-  <pre class="fragment" style="font-size: 38%;width: 95%;"><code class="bash" data-trim data-noescape>
+  <pre style="font-size: 38%;width: 95%;"><code class="bash" data-trim data-noescape>
 $  zig build-exe src/main.zig -target aarch64-linux-musl
 $  file main
 main: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linked, with debug_info, not stripped
@@ -586,18 +586,18 @@ main: ELF 64-bit LSB executable, ARM aarch64, version 1 (SYSV), statically linke
   <h3>Rust</h3>
   <div class="columns c50-50">
   <div>
-    <ul style="font-size: 90%;">
-      <li class="fragment"><i class="qt-lemon">Rendimiento</i>
+    <ul style="font-size: 90%;" class="fragment">
+      <li><i class="qt-lemon">Rendimiento</i>
         <ul class="x70">
           <li>Rápido y eficiente en memoria (sin runtime ni GC).</li>
         </ul>
       </li>
-      <li class="fragment"><i class="qt-lemon">Fiabilidad</i>
+      <li><i class="qt-lemon">Fiabilidad</i>
         <ul class="x70">
           <li>Sistema de tipos rico y modelo de ownership (seguridad de memoria e hilos).</li>
         </ul>
       </li>
-      <li class="fragment"><i class="qt-lemon">Productividad</i>
+      <li><i class="qt-lemon">Productividad</i>
         <ul class="x70">
           <li>Documentación, compilador amigable, gestor de paquetes y herramienta de build.</li>
         </ul>
@@ -716,9 +716,11 @@ note: see more `Cargo.toml` keys and their definitions at
     └── main.rs
 
 2 directories, 2 files
+
 ➜  project cargo build
    Compiling project v0.1.0 (/tmp/project)
     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.21s
+
 ➜  project cargo run
     Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.00s
      Running `target/debug/project`
@@ -733,19 +735,19 @@ Hello, world!
   <div class="columns c50-50">
   <div>
     <h4>Herramientas escritas en Rust</h4>
-    <ul style="font-size: 75%;">
-      <li class="fragment"><i class="qt-lemon">uv</i> y <i class="qt-lemon">ruff</i></li>
-      <li class="fragment"><i class="qt-lemon">pydantic-core</i></li>
-      <li class="fragment"><i class="qt-lemon">polars</i></li>
-      <li class="fragment"><i class="qt-lemon">cryptography</i></li>
+    <ul style="font-size: 75%;" class="fragment">
+      <li><i class="qt-lemon">uv</i> y <i class="qt-lemon">ruff</i></li>
+      <li><i class="qt-lemon">pydantic-core</i></li>
+      <li><i class="qt-lemon">polars</i></li>
+      <li><i class="qt-lemon">cryptography</i></li>
     </ul>
   </div>
   <div>
     <h4>Por qué funcionó</h4>
-    <ul style="font-size: 75%;">
-      <li class="fragment"><i class="qt-neon">PyO3 + maturin</i>: de cero a wheel en minutos</li>
-      <li class="fragment"><i class="qt-neon">cargo</i>: dependencias y builds reproducibles</li>
-      <li class="fragment"><i class="qt-neon">Seguridad de memoria</i> sin recolector de basura</li>
+    <ul style="font-size: 75%;" class="fragment">
+      <li><i class="qt-neon">PyO3 + maturin</i>: de cero a wheel en minutos</li>
+      <li><i class="qt-neon">cargo</i>: dependencias y builds reproducibles</li>
+      <li><i class="qt-neon">Seguridad de memoria</i> sin recolector de basura</li>
     </ul>
   </div>
   </div>
@@ -772,11 +774,11 @@ Hello, world!
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
   <h2>Probablemente <i class="qt-lemon">ya usas Rust</i> sin saberlo</h2>
-  <ul class="x80">
-    <li class="fragment"><code>rpds-py</code>: 470M de descargas en 30 días, dependencia de <code>jsonschema</code></li>
-    <li class="fragment"><code>jiter</code>: 317M, lo usan <code>openai</code> y <code>anthropic</code></li>
-    <li class="fragment"><code>tokenizers</code>: 167M, lo usa <code>transformers</code></li>
-    <li class="fragment"><i class="qt-neon">Una dependencia transitiva que nadie eligió</i></li>
+  <ul class="x80 fragment">
+    <li><code>rpds-py</code>: 470M de descargas en 30 días, dependencia de <code>jsonschema</code></li>
+    <li><code>jiter</code>: 317M, lo usan <code>openai</code> y <code>anthropic</code></li>
+    <li><code>tokenizers</code>: 167M, lo usa <code>transformers</code></li>
+    <li><i class="qt-neon">Una dependencia transitiva que nadie eligió</i></li>
   </ul>
   <p class="x40">pypistats.org, octubre 2026</p>
 </section>
@@ -799,7 +801,7 @@ Hello, world!
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
-  <h3>pero... ¿es realmente la mejor opción?</h3>
+    <h3>pero... ¿es realmente la <i class="qt-lemon">mejor opción</i>?</h3>
 </section>
 
 <section data-transition="fade-in fade-out">
@@ -848,12 +850,12 @@ Hello, world!
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
   <!-- REMOVE -->
   <h1 class="r-fit-text">"Pfff... seguro que</h1>
-  <h1 class="r-fit-text">optimizaste la implementación de C++"</h1>
+  <h1 class="r-fit-text"><u>optimizaste</u> la implementación de C++"</h1>
 </section>
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_rust.svg">
   <!-- REMOVE -->
-  <h1 class="r-fit-text">¡Eso es injusto!</h1>
+  <h1 class="r-fit-text">¡Eso es <i class="rust-red">injusto</i>!</h1>
   <h1 class="r-fit-text">es el overhead de PyO3</h1>
 </section>
 
@@ -933,7 +935,7 @@ Hello, world!
   </code></pre>
   </div>
   </div>
-  <pre style="font-size: 50%; width: 95%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
+  <pre style="font-size: 50%; width: 100%;" class="fragment fade-in" data-fragment-index="3"><code class="c++" data-trim data-noescape>
   // rangos
   vector<int> ints{0,1,2,3,4,5};
   auto even = [](int i){ return 0 == i % 2; };
@@ -1025,12 +1027,12 @@ int y [[indeterminate]];  // opt-out explícito
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_cpp.svg">
   <h3>C++ moderno: <i class="qt-lemon">C++29</i> y después</h3>
-  <ul class="x80">
-    <li class="fragment"><i class="qt-mandarin">Pattern matching</i> (Python lo tiene desde 3.10)</li>
-    <li class="fragment">Trivial relocatability</li>
-    <li class="fragment">Enforcement de contratos y colas concurrentes</li>
-    <li class="fragment">Redes sobre <code>std::execution</code> (async con senders y receivers)</li>
-    <li class="fragment"><i class="qt-lemon">Profiles</i>: fuera de C++26, siguen en discusión</li>
+  <ul class="x80 fragment">
+    <li><i class="qt-mandarin">Pattern matching</i> (Python lo tiene desde 3.10)</li>
+    <li>Trivial relocatability</li>
+    <li>Enforcement de contratos y colas concurrentes</li>
+    <li>Redes sobre <code>std::execution</code> (async con senders y receivers)</li>
+    <li><i class="qt-lemon">Profiles</i>: fuera de C++26, siguen en discusión</li>
   </ul>
   <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> C++ avanza adoptando ideas de otros lenguajes, igual que Python</p>
 </section>
@@ -1072,12 +1074,12 @@ void fill(std::span&lt;int&gt; s, int* raw) {
     <p class="x60">El mismo C++, con reglas más estrictas</p>
   </div>
   <div>
-    <ul class="x70">
-      <li class="fragment">Stroustrup y Sutter</li>
-      <li class="fragment">Subconjuntos opt-in: límites, tipos, lifetimes</li>
-      <li class="fragment">Sin sintaxis ni biblioteca estándar nuevas</li>
-      <li class="fragment">Es la dirección del comité, pero <i class="rust-red">no entra en C++26</i></li>
-      <li class="fragment">C++26 trae en cambio una biblioteca estándar reforzada</li>
+    <ul class="x70 fragment">
+      <li>Stroustrup y Sutter</li>
+      <li>Subconjuntos opt-in: límites, tipos, lifetimes</li>
+      <li>Sin sintaxis ni biblioteca estándar nuevas</li>
+      <li>Es la dirección del comité, pero <i class="rust-red">no entra en C++26</i></li>
+      <li>C++26 trae en cambio una biblioteca estándar reforzada</li>
     </ul>
   </div>
   </div>
@@ -1106,11 +1108,11 @@ int main() safe {
     <p class="x60">Un borrow checker, en C++</p>
   </div>
   <div>
-    <ul class="x70">
-      <li class="fragment">Sean Baxter (P3390, 2024)</li>
-      <li class="fragment">Borrow checker real y funciones <code>safe</code></li>
-      <li class="fragment">Una segunda biblioteca estándar (<code>std2</code>)</li>
-      <li class="fragment"><i class="rust-red">Abandonado</i> en junio de 2025: ganó Profiles</li>
+    <ul class="x70 fragment">
+      <li>Sean Baxter (P3390, 2024)</li>
+      <li>Borrow checker real y funciones <code>safe</code></li>
+      <li>Una segunda biblioteca estándar (<code>std2</code>)</li>
+      <li><i class="rust-red">Abandonado</i> en junio de 2025: ganó Profiles</li>
     </ul>
   </div>
   </div>
@@ -1134,16 +1136,16 @@ int main() safe {
   <h3>Carbon</h3>
   <div class="columns c50-50">
   <div>
-    <ul class="x80">
-      <li class="fragment"><i class="qt-lemon">En desarrollo</i></li>
-      <li class="fragment">Enfoque de sucesor</li>
-      <li class="fragment">Interoperabilidad (C++ ⇄ Carbon)</li>
-      <li class="fragment">Sistema genérico moderno</li>
-      <li class="fragment"><i class="qt-mandarin">Estrategia de seguridad</i> (plan de migración)</li>
+    <ul class="x80 fragment">
+      <li><i class="qt-lemon">En desarrollo</i></li>
+      <li>Enfoque de sucesor</li>
+      <li>Interoperabilidad (C++ ⇄ Carbon)</li>
+      <li>Sistema genérico moderno</li>
+      <li><i class="qt-mandarin">Estrategia de seguridad</i> (plan de migración)</li>
     </ul>
   </div>
   <div>
-    <pre style="font-size: 34%;width: 90%;"><code class="cpp" data-trim data-noescape>
+    <pre style="font-size: 60%;width: 90%;"><code class="cpp" data-trim data-noescape>
     package hello api;
 
     fn Main() -&gt; i32 {
@@ -1152,7 +1154,7 @@ int main() safe {
       return 0;
     }
     </code></pre>
-    <pre style="font-size: 50%;width: 90%;"><code class="bash" data-trim data-noescape>
+    <pre style="font-size: 60%;width: 90%;"><code class="bash" data-trim data-noescape>
     $ ./explorer hello.carbon
     Hello, world!
     </code></pre>
@@ -1164,12 +1166,12 @@ int main() safe {
   <h3>Carbon - Aspectos destacados</h3>
   <div class="columns c50-50">
   <div>
-  <ul class="x80">
-    <li class="fragment">Google, 2022: un <i class="qt-lemon">sucesor</i>, no un dialecto</li>
-    <li class="fragment">La interoperabilidad con C++ es el objetivo central</li>
-    <li class="fragment">Chequeos de memoria y data races en compilación, <i class="qt-lemon">sin</i> <code>&amp;mut</code> exclusivo</li>
-    <li class="fragment">Plan: modo <i class="qt-mandarin">permisivo</i> &rarr; modo <i class="qt-mandarin">estricto</i></li>
-    <li class="fragment"><i class="rust-red">Aún experimental</i></li>
+  <ul class="x80 fragment">
+    <li>Google, 2022: un <i class="qt-lemon">sucesor</i>, no un dialecto</li>
+    <li>La interoperabilidad con C++ es el objetivo central</li>
+    <li>Chequeos de memoria y data races en compilación, <i class="qt-lemon">sin</i> <code>&amp;mut</code> exclusivo</li>
+    <li>Plan: modo <i class="qt-mandarin">permisivo</i> &rarr; modo <i class="qt-mandarin">estricto</i></li>
+    <li><i class="rust-red">Aún experimental</i></li>
   </ul>
   </div>
   <div class="fragment">
@@ -1265,19 +1267,8 @@ def main():
   <p class="fragment" style="font-size: 65%;"><i class="qt-neon">Lo que Python puede aprender:</i> la sintaxis de Python para programar GPUs y aceleradores</p>
 </section>
 
-<section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
-  <h2>Una extensión, muchos lenguajes</h2>
-  <table class="x70">
-  <tr><td><i class="qt-lemon">C</i></td><td>API de C de CPython</td></tr>
-  <tr><td><i class="qt-lemon">C++</i></td><td>nanobind (ABI estable desde Python 3.12)</td></tr>
-  <tr><td><i class="qt-lemon">Rust</i></td><td>PyO3</td></tr>
-  <tr><td><i class="qt-lemon">Zig</i></td><td>PyOZ, py.zig</td></tr>
-  <tr><td><i class="qt-lemon">Mojo</i></td><td>Importa módulos de Python y Python llama a Mojo</td></tr>
-  </table>
-</section>
-
 <section data-transition="fade-in fade-out">
-  <h1>¿Pero esto sigue siendo <i class="qt-lemon">Python</i>?</h1>
+  <h1>¿Pero hasta cuándo sigue siendo <i class="qt-lemon">Python</i>?</h1>
 </section>
 
 <section data-transition="fade-in fade-out">
@@ -1291,12 +1282,11 @@ def main():
 
 <section data-transition="fade-in fade-out" data-background-image="img/background_stars.svg">
     <h2>Últimas optimizaciones de Python</h2>
-    <ul>
-      <li class="fragment"><i class="python-yellow">3.11</i> - Intérprete adaptativo especializante</li>
-      <li class="fragment"><i class="python-yellow">3.12</i> - Generador de intérprete con análisis y modificación del DSL</li>
-      <li class="fragment"><i class="python-yellow">3.13</i> - Más optimización del intérprete de micro-ops (ejecución de código "caliente").</li>
-      <li class="fragment"><i class="python-yellow">3.14</i> - Intérprete con tail calls y el nuevo JIT.</li>
-      <li class="fragment"><i class="rust-red">PEP 836</i> - Hoja de ruta para un JIT soportado: retirado (oct 2026)</li>
+    <ul class="x80 fragment">
+      <li><i class="python-yellow">3.11</i> - Intérprete adaptativo especializante</li>
+      <li><i class="python-yellow">3.12</i> - Generador de intérprete con análisis y modificación del DSL</li>
+      <li><i class="python-yellow">3.13</i> - Más optimización del intérprete de micro-ops (ejecución de código "caliente").</li>
+      <li><i class="python-yellow">3.14</i> - Intérprete con tail calls y el nuevo JIT (retirado Oct 2026).</li>
     </ul>
 </section>
 
